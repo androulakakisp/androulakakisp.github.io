@@ -15,3 +15,4 @@ def calculate_squares(numbers):
 my_list = [1, 2, 3, 4, 5]
 print("Original:", my_list)
 print("Squares:", calculate_squares(my_list))
+```

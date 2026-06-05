@@ -1,0 +1,12 @@
+{
+  "hash": "d492c56643c1b6f779898b34817b09fc",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"My First Python Code Post\"\ndate: \"2026-06-05\"\ncategories: [python, learning]\n---\n\n## Running Python in Quarto\n\nWatch how Quarto can actually run Python code and show the result!\n\n::: {#0f4dad7a .cell execution_count=1}\n``` {.python .cell-code}\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

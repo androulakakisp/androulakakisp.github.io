@@ -18,14 +18,14 @@
     "href": "posts/python-test/index.html",
     "title": "My First Python Code Post",
     "section": "",
-    "text": "Watch how Quarto can actually run Python code and show the result!\ndef calculate_squares(numbers): return [n**2 for n in numbers]\nmy_list = [1, 2, 3, 4, 5] print(“Original:”, my_list) print(“Squares:”, calculate_squares(my_list))"
+    "text": "Watch how Quarto can actually run Python code and show the result!\n\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]"
   },
   {
     "objectID": "posts/python-test/index.html#running-python-in-quarto",
     "href": "posts/python-test/index.html#running-python-in-quarto",
     "title": "My First Python Code Post",
     "section": "",
-    "text": "Watch how Quarto can actually run Python code and show the result!\ndef calculate_squares(numbers): return [n**2 for n in numbers]\nmy_list = [1, 2, 3, 4, 5] print(“Original:”, my_list) print(“Squares:”, calculate_squares(my_list))"
+    "text": "Watch how Quarto can actually run Python code and show the result!\n\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]"
   },
   {
     "objectID": "posts/post-with-code/index.html",
