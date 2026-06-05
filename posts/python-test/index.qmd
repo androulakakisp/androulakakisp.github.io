@@ -1,0 +1,17 @@
+---
+title: "My First Python Code Post"
+date: "2026-06-05"
+categories: [python, learning]
+---
+
+## Running Python in Quarto
+
+Watch how Quarto can actually run Python code and show the result!
+
+```{python}
+def calculate_squares(numbers):
+    return [n**2 for n in numbers]
+
+my_list = [1, 2, 3, 4, 5]
+print("Original:", my_list)
+print("Squares:", calculate_squares(my_list))
