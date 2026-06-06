@@ -28,6 +28,62 @@
     "text": "Watch how Quarto can actually run Python code and show the result!\n\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]"
   },
   {
+    "objectID": "projects/ants/template_post.html",
+    "href": "projects/ants/template_post.html",
+    "title": "Tempalte",
+    "section": "",
+    "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/spiking_neural_networks/template_post.html",
+    "href": "projects/spiking_neural_networks/template_post.html",
+    "title": "Tempalte",
+    "section": "",
+    "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/immune_system/template_post.html",
+    "href": "projects/immune_system/template_post.html",
+    "title": "Tempalte",
+    "section": "",
+    "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/cellular_automata/template_post.html",
+    "href": "projects/cellular_automata/template_post.html",
+    "title": "Tempalte",
+    "section": "",
+    "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/cellular_automata/index.html",
+    "href": "projects/cellular_automata/index.html",
+    "title": "Cellular Automata",
+    "section": "",
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/immune_system/index.html",
+    "href": "projects/immune_system/index.html",
+    "title": "Immune System",
+    "section": "",
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/spiking_neural_networks/index.html",
+    "href": "projects/spiking_neural_networks/index.html",
+    "title": "Spiking Neural Networks",
+    "section": "",
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/ants/index.html",
+    "href": "projects/ants/index.html",
+    "title": "Ants",
+    "section": "",
+    "text": "Ants are amazing. How do they do so much with such little individual capability? We investigate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
     "title": "Post With Code",

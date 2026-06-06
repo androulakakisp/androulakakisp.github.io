@@ -1,0 +1,10 @@
+---
+title: "Tempalte"
+date: "2026-06-06"
+description: "description"
+categories: [Template, Python]
+---
+
+### Hello World
+
+This is a template for a post
