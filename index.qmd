@@ -1,14 +1,13 @@
 ---
 title: "Emergent Intelligence"
-subtitle: "Latest Simulation Logs & Research Notes"
-listing:
-  contents: 
-    - "projects/ants/**/*.qmd"
-    - "projects/cellular_automata/**/*.qmd"
-    - "projects/immune_system/**/*.qmd"
-    - "projects/spiking_neural_networks/**/*.qmd"
-  sort: "date desc"
-  type: grid
-  grid-columns: 2
-  categories: true
+image: profile.jpg
+about:
+  template: solana
+  links:
+    - icon: github
+      href: https://github.com/
 ---
+
+This site serves as a live repository for my experiments in swarm intelligence, cellular automata, and neural architectures. 
+
+Use the **Projects** dropdown menu above to explore specific project dashboards, or browse my open-source codebases via GitHub.
