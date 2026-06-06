@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  resources: [CNAME]
 
 website:
   title: "Emergent Intelligence"
@@ -11,13 +12,13 @@ website:
       - text: "Projects"
         menu:
         - text: "Immune System"
-          href: projects/immune_system/index.qml
+          href: projects/immune_system/index.qmd
         - text: "Ants"
-          href: projects/ants/index.qml
+          href: projects/ants/index.qmd
         - text: "Cellular Automata"
-          href: projects/cellular_automata/index.qml
+          href: projects/cellular_automata/index.qmd
         - text: "Spiking Neural Networks"
-          href: projects/spiking_neural_networks/index.qml
+          href: projects/spiking_neural_networks/index.qmd
 
     right:
       - about.qmd
