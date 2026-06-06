@@ -1,13 +1,31 @@
 ---
 title: "Emergent Intelligence"
-image: profile.jpg
-about:
-  template: solana
-  links:
-    - icon: github
-      href: https://github.com/
+subtitle: "Digital Lab Notebook & Research Matrix"
+listing:
+  id: project-listing
+  type: grid
+  grid-columns: 2
+  sort-ui: false
+  filter-ui: false
+  contents:
+    - path: projects/cellular_automata/index.qmd
+      title: "Cellular Automata"
+      description: "Exploring Conway's Game of Life, elementary rulesets, and localized emergent structures."
+    
+    - path: projects/ants/index.qmd
+      title: "Ant Colony Optimization"
+      description: "Simulating swarm intelligence, complex pheromone mapping, and emergent collective behaviors."
+    
+    - path: projects/immune_system/index.qmd
+      title: "Immune System Simulations"
+      description: "Modeling artificial immune responses, pathogen defenses, and agent-based biological systems."
+    
+    - path: projects/spiking_neural_networks/index.qmd
+      title: "Spiking Neural Networks"
+      description: "Investigating time-dependent neural dynamics, STDP learning rules, and neuromorphic frameworks."
 ---
 
-This site serves as a live repository for my experiments in swarm intelligence, cellular automata, and neural architectures. 
+Welcome to my central research hub. Select a domain matrix below to explore my chronological project logs, active simulations, and codebases.
 
-Use the **Projects** dropdown menu above to explore specific project dashboards, or browse my open-source codebases via GitHub.
+::: {#project-listing}
+:::

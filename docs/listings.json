@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "projects/ants/index.html",
+      "projects/cellular_automata/index.html",
+      "projects/immune_system/index.html",
+      "projects/spiking_neural_networks/index.html"
+    ]
+  },
+  {
     "listing": "/projects/cellular_automata/index.html",
     "items": [
       "/projects/cellular_automata/template_post.html"
