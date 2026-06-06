@@ -3,8 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "Test-blog"
+  title: "Emergent Intelligence"
   navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Projects"
+        menu:
+        - text: "Immune System"
+          href: projects/immune_system/index.qml
+        - text: "Ants"
+          href: projects/ants/index.qml
+        - text: "Cellular Automata"
+          href: projects/cellular_automata/index.qml
+        - text: "Spiking Neural Networks"
+          href: projects/spiking_neural_networks/index.qml
+
     right:
       - about.qmd
       - icon: github

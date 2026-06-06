@@ -1,14 +1,17 @@
 ---
-title: "Test-blog"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Your Name"
+image: profile.jpg             # Drop a square picture of yourself in the main folder
+about:
+  template: jolla              # Clean layout templates: jolla, trestles, solana, or marquee
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/yourusername
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/yourusername
 ---
 
+Hello! I am a data analyst and software explorer building tools inside Linux environments. 
 
+I use this space to document my technical logs and projects. Head over to the **Projects** menu above to see what I am actively building!
