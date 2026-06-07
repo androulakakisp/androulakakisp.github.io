@@ -33,6 +33,11 @@ listing:
 >
 > - *The Talos Principle*
 
+::: {#project-listings}
+:::
+
+---
+
 ### Welcome!
 
 Welcome to the Emergent Intelligence Blog! This website contains posts detailing my exploration into the world of emergent intelligence and beyond. Before continuing, I think it is important that you as the reader understand what the purpose of this blog is. It is first and foremost a way for me to document my progress and keep my self honest about my own intellectual curiosities. By documenting it in this form it gives me a concrete way to measure my progress and build on my own work. This blog is not an exploration of the state of the art. In fact, I can almost guarantee that it is not. I am intentionally not reading any papers (yet) and not directly building on anyone else's research.
