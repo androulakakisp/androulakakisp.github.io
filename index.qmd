@@ -1,6 +1,6 @@
 ---
 title: "Emergent Intelligence"
-subtitle: "Digital Lab Notebook & Research Matrix"
+subtitle: ""
 listing:
   id: project-listing
   type: grid
@@ -10,22 +10,49 @@ listing:
   contents:
     - path: projects/cellular_automata/index.qmd
       title: "Cellular Automata"
-      description: "Exploring Conway's Game of Life, elementary rulesets, and localized emergent structures."
+      description: "Collection of thoughts and tests where simple rules interact to form complex results"
     
     - path: projects/ants/index.qmd
-      title: "Ant Colony Optimization"
-      description: "Simulating swarm intelligence, complex pheromone mapping, and emergent collective behaviors."
+      title: "Ants"
+      description: ""
     
     - path: projects/immune_system/index.qmd
-      title: "Immune System Simulations"
-      description: "Modeling artificial immune responses, pathogen defenses, and agent-based biological systems."
+      title: "Immune System"
+      description: "Testing "
     
     - path: projects/spiking_neural_networks/index.qmd
       title: "Spiking Neural Networks"
-      description: "Investigating time-dependent neural dynamics, STDP learning rules, and neuromorphic frameworks."
+      description: "Learning how to simulate and train spiking nerual networks."
 ---
 
-Welcome to my central research hub. Select a domain matrix below to explore my chronological project logs, active simulations, and codebases.
+> "You know, the more I think about it, the more I believe that no-one is actually worried about AIs taking over the world or anything like that, no matter what they say. 
+> 
+> What they're really worried about is that someone might prove, once and for all, that consciousness can arise from matter. And I kind of understand why they find it so terrifying. If we can create a sentient being, where does that leave the soul? Without mystery, how can we see ourselves as anything other than machines? And if we are machines, what hope do we have that death is not the end? 
+> 
+> What really scares people is not the artificial intelligence in the computer, but the 'natural' intelligence they see in the mirror."
+>
+> - *The Talos Principle*
+
+### Welcome!
+
+Welcome to the Emergent Intelligence Blog! This website contains posts detailing my exploration into the world of emergent intelligence and beyond. Before continuing, I think it is important that you as the reader understand what the purpose of this blog is. It is first and foremost a way for me to document my progress and keep my self honest about my own intellectual curiosities. By documenting it in this form it gives me a concrete way to measure my progress and build on my own work. This blog is not an exploration of the state of the art. In fact, I can almost guarantee that it is not. I am intentionally not reading any papers (yet) and not directly building on anyone else's research.
+
+### Why I'm Not Reading Papers (Yet)
+
+I have found in the past that when I discover a new topic I am excited about, I immediately go and read about what everyone in the field has been doing with it. This is clearly an important step for coming up to speed on the state of the art, and is non-negotiable if one wants to publish work in the domain. However, I have recently noticed that it seems to stifle my own innovation.
+* "Why spend my time doing a tiny simulation when there are labs full of people working on this full time?"
+* "Surely there is nothing I can do that they won't already have tried..."
+* "If I really want to work on X, I first need to be an expert in Y, which means I need to learn about Z, etc...."
+These kinds of feelings were surmountable in graduate school when I had the time and support to actually dedicate myself fully to a topic like this and get to the forefront of knowledge to make my impact. These days, with a full time job and other responsibilities, these kinds of thought quickly turn into a feeling of futility and eventual inaction. I end up reading papers from the sidelines and daydream about all the cool things I could (but won't) be trying out. Well no more.
+
+### Exploring Curiosities for Curiosity's Sake
+
+The time has come for me to just sit down and do the things that I find interesting. I am removing all expectations of making something useful or novel, and just learning and experimenting because its fun. I will probably make a bunch of mistakes. I will probably go down countless dead ends. I will probably reinvent the wheel a hundred times. But in the process, I will get to reinvigorate my sense of curiosity and have a blast doing it. Plus I will learn how to make a pretty damn good wheel.
+
+If this journey sounds like fun to you as well, then welcome aboard. I hope this helps inspire you to just try something out too.
+
+### AI Disclosure
+I am not using AI to generate any of the text you read or images you see. What would even be the point. I will however be using AI to help me understand how to use the various python packages so some of the code you see may be AI generated. I will be sure to mark all such instances appropriately. 
 
 ::: {#project-listing}
 :::

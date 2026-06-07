@@ -9,9 +9,10 @@
     ]
   },
   {
-    "listing": "/projects/cellular_automata/index.html",
+    "listing": "/projects/spiking_neural_networks/index.html",
     "items": [
-      "/projects/cellular_automata/template_post.html"
+      "/projects/spiking_neural_networks/template_post.html",
+      "/projects/spiking_neural_networks/backstory.html"
     ]
   },
   {
@@ -21,9 +22,9 @@
     ]
   },
   {
-    "listing": "/projects/spiking_neural_networks/index.html",
+    "listing": "/projects/cellular_automata/index.html",
     "items": [
-      "/projects/spiking_neural_networks/template_post.html"
+      "/projects/cellular_automata/template_post.html"
     ]
   },
   {

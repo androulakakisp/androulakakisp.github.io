@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Emergent Intelligence",
     "section": "",
-    "text": "Welcome to my central research hub. Select a domain matrix below to explore my chronological project logs, active simulations, and codebases.\n\n\n\n\n\n\n\n\nAnt Colony Optimization\n\n\nSimulating swarm intelligence, complex pheromone mapping, and emergent collective behaviors.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCellular Automata\n\n\nExploring Conway’s Game of Life, elementary rulesets, and localized emergent structures.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImmune System Simulations\n\n\nModeling artificial immune responses, pathogen defenses, and agent-based biological systems.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpiking Neural Networks\n\n\nInvestigating time-dependent neural dynamics, STDP learning rules, and neuromorphic frameworks.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "“You know, the more I think about it, the more I believe that no-one is actually worried about AIs taking over the world or anything like that, no matter what they say.\nWhat they’re really worried about is that someone might prove, once and for all, that consciousness can arise from matter. And I kind of understand why they find it so terrifying. If we can create a sentient being, where does that leave the soul? Without mystery, how can we see ourselves as anything other than machines? And if we are machines, what hope do we have that death is not the end?\nWhat really scares people is not the artificial intelligence in the computer, but the ‘natural’ intelligence they see in the mirror.”\n\nThe Talos Principle\n\n\n\nWelcome!\nWelcome to the Emergent Intelligence Blog! This website contains posts detailing my exploration into the world of emergent intelligence and beyond. Before continuing, I think it is important that you as the reader understand what the purpose of this blog is. It is first and foremost a way for me to document my progress and keep my self honest about my own intellectual curiosities. By documenting it in this form it gives me a concrete way to measure my progress and build on my own work. This blog is not an exploration of the state of the art. In fact, I can almost guarantee that it is not. I am intentionally not reading any papers (yet) and not directly building on anyone else’s research.\n\n\nWhy I’m Not Reading Papers (Yet)\nI have found in the past that when I discover a new topic I am excited about, I immediately go and read about what everyone in the field has been doing with it. This is clearly an important step for coming up to speed on the state of the art, and is non-negotiable if one wants to publish work in the domain. However, I have recently noticed that it seems to stifle my own innovation. * “Why spend my time doing a tiny simulation when there are labs full of people working on this full time?” * “Surely there is nothing I can do that they won’t already have tried…” * “If I really want to work on X, I first need to be an expert in Y, which means I need to learn about Z, etc….” These kinds of feelings were surmountable in graduate school when I had the time and support to actually dedicate myself fully to a topic like this and get to the forefront of knowledge to make my impact. These days, with a full time job and other responsibilities, these kinds of thought quickly turn into a feeling of futility and eventual inaction. I end up reading papers from the sidelines and daydream about all the cool things I could (but won’t) be trying out. Well no more.\n\n\nExploring Curiosities for Curiosity’s Sake\nThe time has come for me to just sit down and do the things that I find interesting. I am removing all expectations of making something useful or novel, and just learning and experimenting because its fun. I will probably make a bunch of mistakes. I will probably go down countless dead ends. I will probably reinvent the wheel a hundred times. But in the process, I will get to reinvigorate my sense of curiosity and have a blast doing it. Plus I will learn how to make a pretty damn good wheel.\nIf this journey sounds like fun to you as well, then welcome aboard. I hope this helps inspire you to just try something out too.\n\n\nAI Disclosure\nI am not using AI to generate any of the text you read or images you see. What would even be the point. I will however be using AI to help me understand how to use the various python packages so some of the code you see may be AI generated. I will be sure to mark all such instances appropriately.\n\n\n\n\n\n\n\n\nAnts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCellular Automata\n\n\nCollection of thoughts and tests where simple rules interact to form complex results\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImmune System\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpiking Neural Networks\n\n\nLearning how to simulate and train spiking nerual networks.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -35,8 +35,29 @@
     "text": "Hello World\nThis is a template for a post"
   },
   {
-    "objectID": "projects/spiking_neural_networks/template_post.html",
-    "href": "projects/spiking_neural_networks/template_post.html",
+    "objectID": "projects/spiking_neural_networks/index.html",
+    "href": "projects/spiking_neural_networks/index.html",
+    "title": "Spiking Neural Networks",
+    "section": "",
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBackstory\n\n\n\n\n\n\nSpiking Neural Networks\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/immune_system/index.html",
+    "href": "projects/immune_system/index.html",
+    "title": "Immune System",
+    "section": "",
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/cellular_automata/index.html",
+    "href": "projects/cellular_automata/index.html",
+    "title": "Cellular Automata",
+    "section": "",
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/cellular_automata/template_post.html",
+    "href": "projects/cellular_automata/template_post.html",
     "title": "Tempalte",
     "section": "",
     "text": "Hello World\nThis is a template for a post"
@@ -49,32 +70,18 @@
     "text": "Hello World\nThis is a template for a post"
   },
   {
-    "objectID": "projects/cellular_automata/template_post.html",
-    "href": "projects/cellular_automata/template_post.html",
+    "objectID": "projects/spiking_neural_networks/template_post.html",
+    "href": "projects/spiking_neural_networks/template_post.html",
     "title": "Tempalte",
     "section": "",
     "text": "Hello World\nThis is a template for a post"
   },
   {
-    "objectID": "projects/cellular_automata/index.html",
-    "href": "projects/cellular_automata/index.html",
-    "title": "Cellular Automata",
+    "objectID": "projects/spiking_neural_networks/backstory.html",
+    "href": "projects/spiking_neural_networks/backstory.html",
+    "title": "Backstory",
     "section": "",
-    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/immune_system/index.html",
-    "href": "projects/immune_system/index.html",
-    "title": "Immune System",
-    "section": "",
-    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/spiking_neural_networks/index.html",
-    "href": "projects/spiking_neural_networks/index.html",
-    "title": "Spiking Neural Networks",
-    "section": "",
-    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "The first thing that got me into machine learning was MarI/O. I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made Mario blaze through the level unscathed. Even more mind blowing was that this set of connections could be obtained through an evolutionary process. No direct design. Just trial and error and environmental pressures. Ever since then, I have been obsessed with evolutionary optimization methods and have tried to sneak them into my work whenever I can.\nThese days, much of the work being done with neural networks seems to favor the almighty back propagation algorithm, and for good reason. Evolutionary methods can be very sample inefficient, resulting in significantly worse performance as compared to back propagation for the same number of training passes. Back propagation based methods are able to do something truly amazing. They constantly move towards a better solution in way that also seemingly avoids local optima. The only catch is that they require that the network be differentiable.\nAs the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche.\nIn come spiking neural networks. I don’t know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. This prevents direct application of back propagation. Neuroevolution however is gradient free and can be applied to these kinds of networks in a straight forward way. This immediately piqued my interest."
   },
   {
     "objectID": "projects/ants/index.html",

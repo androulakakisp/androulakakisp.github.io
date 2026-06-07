@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-06-06">
 
-<title>Emergent Intelligence</title>
+<title>Emergent Intelligence - Backstory</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-project-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-project-listing'] = new List('listing-project-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -140,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Emergent Intelligence</span>
     </a>
   </div>
@@ -151,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -160,19 +101,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="./projects/immune_system/index.html">
+    <a class="dropdown-item" href="../../projects/immune_system/index.html">
  <span class="dropdown-text">Immune System</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/ants/index.html">
+    <a class="dropdown-item" href="../../projects/ants/index.html">
  <span class="dropdown-text">Ants</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/cellular_automata/index.html">
+    <a class="dropdown-item" href="../../projects/cellular_automata/index.html">
  <span class="dropdown-text">Cellular Automata</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/spiking_neural_networks/index.html">
+    <a class="dropdown-item" href="../../projects/spiking_neural_networks/index.html">
  <span class="dropdown-text">Spiking Neural Networks</span></a>
   </li>  
     </ul>
@@ -180,7 +121,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -211,14 +152,23 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Emergent Intelligence</h1>
-</div>
+<h1 class="title">Backstory</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Spiking Neural Networks</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 6, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -228,121 +178,13 @@ window.Quarto = {
 </header>
 
 
-<blockquote class="blockquote">
-<p>“You know, the more I think about it, the more I believe that no-one is actually worried about AIs taking over the world or anything like that, no matter what they say.</p>
-<p>What they’re really worried about is that someone might prove, once and for all, that consciousness can arise from matter. And I kind of understand why they find it so terrifying. If we can create a sentient being, where does that leave the soul? Without mystery, how can we see ourselves as anything other than machines? And if we are machines, what hope do we have that death is not the end?</p>
-<p>What really scares people is not the artificial intelligence in the computer, but the ‘natural’ intelligence they see in the mirror.”</p>
-<ul>
-<li><em>The Talos Principle</em></li>
-</ul>
-</blockquote>
-<section id="welcome" class="level3">
-<h3 class="anchored" data-anchor-id="welcome">Welcome!</h3>
-<p>Welcome to the Emergent Intelligence Blog! This website contains posts detailing my exploration into the world of emergent intelligence and beyond. Before continuing, I think it is important that you as the reader understand what the purpose of this blog is. It is first and foremost a way for me to document my progress and keep my self honest about my own intellectual curiosities. By documenting it in this form it gives me a concrete way to measure my progress and build on my own work. This blog is not an exploration of the state of the art. In fact, I can almost guarantee that it is not. I am intentionally not reading any papers (yet) and not directly building on anyone else’s research.</p>
-</section>
-<section id="why-im-not-reading-papers-yet" class="level3">
-<h3 class="anchored" data-anchor-id="why-im-not-reading-papers-yet">Why I’m Not Reading Papers (Yet)</h3>
-<p>I have found in the past that when I discover a new topic I am excited about, I immediately go and read about what everyone in the field has been doing with it. This is clearly an important step for coming up to speed on the state of the art, and is non-negotiable if one wants to publish work in the domain. However, I have recently noticed that it seems to stifle my own innovation. * “Why spend my time doing a tiny simulation when there are labs full of people working on this full time?” * “Surely there is nothing I can do that they won’t already have tried…” * “If I really want to work on X, I first need to be an expert in Y, which means I need to learn about Z, etc….” These kinds of feelings were surmountable in graduate school when I had the time and support to actually dedicate myself fully to a topic like this and get to the forefront of knowledge to make my impact. These days, with a full time job and other responsibilities, these kinds of thought quickly turn into a feeling of futility and eventual inaction. I end up reading papers from the sidelines and daydream about all the cool things I could (but won’t) be trying out. Well no more.</p>
-</section>
-<section id="exploring-curiosities-for-curiositys-sake" class="level3">
-<h3 class="anchored" data-anchor-id="exploring-curiosities-for-curiositys-sake">Exploring Curiosities for Curiosity’s Sake</h3>
-<p>The time has come for me to just sit down and do the things that I find interesting. I am removing all expectations of making something useful or novel, and just learning and experimenting because its fun. I will probably make a bunch of mistakes. I will probably go down countless dead ends. I will probably reinvent the wheel a hundred times. But in the process, I will get to reinvigorate my sense of curiosity and have a blast doing it. Plus I will learn how to make a pretty damn good wheel.</p>
-<p>If this journey sounds like fun to you as well, then welcome aboard. I hope this helps inspire you to just try something out too.</p>
-</section>
-<section id="ai-disclosure" class="level3">
-<h3 class="anchored" data-anchor-id="ai-disclosure">AI Disclosure</h3>
-<p>I am not using AI to generate any of the text you read or images you see. What would even be the point. I will however be using AI to help me understand how to use the various python packages so some of the code you see may be AI generated. I will be sure to mark all such instances appropriately.</p>
-<div id="listing-project-listing" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1780761050885" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
-<a href="./projects/ants/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ants
-</h5>
-<div class="card-text listing-description">
-
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1780761050889" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./projects/cellular_automata/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Cellular Automata
-</h5>
-<div class="card-text listing-description">
-Collection of thoughts and tests where simple rules interact to form complex results
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1780761050889" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./projects/immune_system/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Immune System
-</h5>
-<div class="card-text listing-description">
-Testing
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1780852380743" data-listing-reading-time-sort="2" data-listing-word-count-sort="353">
-<a href="./projects/spiking_neural_networks/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Spiking Neural Networks
-</h5>
-<div class="card-text listing-description">
-Learning how to simulate and train spiking nerual networks.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<p>The first thing that got me into machine learning was <a href="https://www.youtube.com/watch?v=qv6UVOQ0F44">MarI/O</a>. I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made Mario blaze through the level unscathed. Even more mind blowing was that this set of connections could be obtained through an evolutionary process. No direct design. Just trial and error and environmental pressures. Ever since then, I have been obsessed with evolutionary optimization methods and have tried to sneak them into my work whenever I can.</p>
+<p>These days, much of the work being done with neural networks seems to favor the almighty back propagation algorithm, and for good reason. Evolutionary methods can be very sample inefficient, resulting in significantly worse performance as compared to back propagation for the same number of training passes. Back propagation based methods are able to do something truly amazing. They constantly move towards a better solution in way that also seemingly avoids local optima. The only catch is that they require that the network be differentiable.</p>
+<p>As the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche.</p>
+<p>In come spiking neural networks. I don’t know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. This prevents direct application of back propagation. Neuroevolution however is gradient free and can be applied to these kinds of networks in a straight forward way. This immediately piqued my interest.</p>
+<!-- I am still learning about all the implications of this architecture (power savings, memory, etc...) and how it relates to standard deep neural networks. But overall this seems like  -->
 
 
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

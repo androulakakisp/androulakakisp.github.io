@@ -1,0 +1,19 @@
+---
+title: "Backstory"
+date: "2026-06-06"
+description: ""
+categories: [Spiking Neural Networks]
+---
+
+The first thing that got me into machine learning was [MarI/O](https://www.youtube.com/watch?v=qv6UVOQ0F44). I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made Mario blaze through the level unscathed. Even more mind blowing was that this set of connections could be obtained through an evolutionary process. No direct design. Just trial and error and environmental pressures. Ever since then, I have been obsessed with evolutionary optimization methods and have tried to sneak them into my work whenever I can. 
+
+These days, much of the work being done with neural networks seems to favor the almighty back propagation algorithm, and for good reason. Evolutionary methods can be very sample inefficient, resulting in significantly worse performance as compared to back propagation for the same number of training passes. Back propagation based methods are able to do something truly amazing. They constantly move towards a better solution in way that also seemingly avoids local optima. The only catch is that they require that the network be differentiable.
+
+As the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche. 
+
+In come spiking neural networks. I don't know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. This prevents direct application of back propagation. Neuroevolution however is gradient free and can be applied to these kinds of networks in a straight forward way. This immediately piqued my interest.
+
+
+<!-- I am still learning about all the implications of this architecture (power savings, memory, etc...) and how it relates to standard deep neural networks. But overall this seems like  -->
+
+ 
