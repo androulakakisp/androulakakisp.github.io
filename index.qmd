@@ -44,6 +44,7 @@ Welcome to the Emergent Intelligence Blog! This website contains posts detailing
 ### Why I'm Not Reading Papers (Yet)
 
 I have found in the past that when I discover a new topic I am excited about, I immediately go and read about what everyone in the field has been doing with it. This is clearly an important step for coming up to speed on the state of the art, and is non-negotiable if one wants to publish work in the domain. However, I have recently noticed that it seems to stifle my own innovation.
+
 * "Why spend my time doing a tiny simulation when there are labs full of people working on this full time?"
 * "Surely there is nothing I can do that they won't already have tried..."
 * "If I really want to work on X, I first need to be an expert in Y, which means I need to learn about Z, etc...."
