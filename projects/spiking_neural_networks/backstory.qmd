@@ -11,8 +11,7 @@ These days, much of the work being done with neural networks seems to favor the 
 
 As the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche. 
 
-In come spiking neural networks. I don't know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. This prevents direct application of back propagation. Neuroevolution however is gradient free and can be applied to these kinds of networks in a straight forward way. This immediately piqued my interest.
-
+In come spiking neural networks. I don't know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. There are many pros/cons to these kinds of networks (many of which I am still learning about), but one of the biggest drawbacks is that it is not differentiable. More precisely, its derivatives are either zero or undefined which ends up blocking the gradient flow required by back propagation. Furthermore, because the SNNs process information over time, doing back propagation would require storing states across multiple time steps. Evolutionary methods have neither of these problems. This makes SNNs seem like a great place to get some experience with neuroevolution.
 
 <!-- I am still learning about all the implications of this architecture (power savings, memory, etc...) and how it relates to standard deep neural networks. But overall this seems like  -->
 
