@@ -1,0 +1,178 @@
+---
+title: "Brian - Introduction Part 1: Neurons"
+date: "2026-06-13"
+description: ""
+categories: [Spiking Neural Networks, Brian]
+---
+
+I will begin learning about spiking neural networks with the [Brian](https://briansimulator.org/) toolbox. Yes thats right. Brian. Not Brain. Very funny. The reason I want to start with Brian is because it seems to have a lot of features for modeling individual neurons. Before making networks of them, it would be great if I built up my understanding of the individual spiking neurons are modeled. 
+
+The Brian team have very kindly put together a set of [examples and tutorials](https://brian2.readthedocs.io/en/stable/resources/tutorials/1-intro-to-brian-neurons.html) on the website, so I figured what better place to start than there. What you will find below is me walking through those examples and commenting on it as I go. It is an objectively less helpful version of what is on their examples page, so if you want to see all the details I recommend visiting their examples page directly. I will have one post for each of their tutorials and plan to do a couple small experiments with all this knowledge after I am done, so feel free to skip these tutorial posts and go straight to the experiments.
+
+## Units
+
+In brain, we can attach units to our quantities by multiplying them by the unit name. For example,
+```
+1000*amp
+1e6*volt
+1000*namp
+```
+Thats pretty cool. Even more cool is the fact that these units now effect all downstream operations. So you can do things like 
+```
+10*nA*5*Mohm
+```
+to get an output in units of Volts! If you try to combine units in a way that doesn't make sense (like adding volts to amps) it will result in an error. 
+
+## Simple Model
+
+The spiking model of a neuron is temporal. This means that we must be able to model its output as a function of time. In Brian, this is done using differential equations.
+```
+tau = 10*ms
+eqs = '''
+dv/dt = (1-v)/tau : 1
+'''
+```
+In this example, `tau` represents our time step and `eqs` represents the differential equation used for modeling the neuron. The information to the right of the `:` symbol specifies the units of the variable that is defined by that differential equation (in this case v). When you see `1`, that means unitless. Note that in this differential equation, we must include the division by tau. The left side of the equation `dv/dt` has units of `1/seconds` so the right side must match. 
+
+We can use this setup to create a neuron as follows
+```
+G = NeuronGroup(1,eqs)
+```
+As is indicated by the name, you can only create 'groups' of neurons in Brian. The two arguments here are the number of neurons in the group (in this case `1`) and the defining differential equations.
+
+To simulate the neuron, we can now simply call the `run` command with an input that specifies how for into the future to simulate.
+```
+run(100*ms)
+```
+To see what happened, you can directly look at the vairable `G.v[0]` before and after running. Alternatively, Brian has a thing called a 'state monitor' that records the values oa specific neurons while the simulation runs. 
+```
+M = StateMonitor(G,'v',record=0)
+```
+The first two arguments specify the group we want to record from and the variable that we want to record. The third argument specifies the index of the neuron in that group that we want to record (in this case there is only one neuron so we can only specify 0). Once you set up this state monitor and run the simulation, you can look at all the values of `v` over time. Pretty cool!
+```
+plot(M.t/ms, M.v[0])
+xlabel('Time (ms)')
+ylabel('v');
+```
+
+## Adding Spikes
+
+Now that we know how to set all this up, adding spikes is actually pretty straight forward. We simply specify a threshold for our variable, and a value to reset to after the spike has triggered. 
+```
+G = NeuronGroup(1, eqs, threshold='v>0.8', reset='v = 0', method='exact')
+spikemon = SpikeMonitor(G)
+run(50*ms)
+print('Spike times: %s' % spikemon.t[:])
+```
+Note that in the example above, we also created a 'Spike Monitor' that looks out our neuron group G and records all the spiking times. 
+
+## Refractoriness
+
+Neuron models often want to model something called refractoriness. The refractory period specifies the amount of time after a firing even the neuron must wait before firing again. Brain handles this in a pretty stright forward way. We simply add another input to our neruon model that specifies how long we want the refractory period to be. 
+```
+tau = 10*ms
+eqs = '''
+dv/dt = (1-v)/tau : 1 (unless refractory)
+'''
+
+G = NeuronGroup(1, eqs, threshold='v>0.8', reset='v = 0', refractory=5*ms, method='exact')
+```
+Note that we also added `(unless refractory)` to the differential equation definition. This means that the neuron will follow the specified differential equation unless the neuron is refractory. In those cases, it will switch off the differential equation and remain constant. 
+
+## Multiple Neurons
+
+Now we start getting to the fun stuff. Lets add some more neurons to our neuron group. To do this, we can simply modify the first argument in 'NeuronGroup'. And to make things interesting we can also randomly initialize the starting value of the neurons and set up a spike monitor. 
+```
+G = NeuronGroup(100, eqs, threshold='v>1', reset='v=0', method='exact')
+G.v = 'rand()'
+sm = SpikeMonitor(G)
+```
+When looking at the spike monitor, we can look at `sm.i`. to get the neuron index that corresponds to each of the spikes in `sm.t`. We can use this to make a raster plot which apparently is something that is common to look at in neuroscience. 
+```
+plot(sm.t/ms, sm.i, '.k')
+xlabel('Time (ms)')
+ylabel('Neuron index');
+```
+
+## Parameters
+
+In the previous example, all the neurons in the group were exactly the same with the exeption of their random starting value. We can do some more interesting stuff by adding in per-neuron parameters. Below is an example of how to do this
+```
+N = 100
+tau = 10*ms
+v0_max = 3.
+duration = 1000*ms
+
+eqs = '''
+dv/dt = (v0-v)/tau : 1 (unless refractory)
+v0 : 1
+'''
+
+G = NeuronGroup(N, eqs, threshold='v>1', reset='v=0', refractory=5*ms, method='exact')
+M = SpikeMonitor(G)
+
+G.v0 = 'i*v0_max/(N-1)'
+
+run(duration)
+```
+Lets walk through this. To start, we have modified our differential equation to now have a parameters `v0`. We have specified that this value is unitless. We set up the neuron group with 100 neurons that spike when v>1 and have a 5ms refractory period. We have also specified that each neuron should set their v0 parameters according to `G.v0 = 'i*v0_max/(N-1)'`. I am curious if this `N` term needs to be the same variable name as is used in the input of the NeuronGroup. Let me test it out. 
+
+If I leave the equation for `G.vo` the same but change the variable N to be P everywhere else in this example, it still works. So it looks like you should use N in that equation to represent the number of neurons no matter what you named it when making the neuron group.
+
+## Stochastic Neurons
+We can also model some noise in our neurons by using the symbol `xi` in our differential equations. Note that because of the way stochastic differentials scale with time, we need to make sure we multiply `xi` by `tau`.
+```
+eqs = '''
+dv/dt = (v0-v)/tau+0.2*xi*tau**-0.5 : 1 (unless refractory)
+v0 : 1
+'''
+G = NeuronGroup(N, eqs, threshold='v>1', reset='v=0', refractory=5*ms, method='euler')
+```
+We also changed the method argument of the neuron group to be `euler`. What is cool about these stochastic neurons is that now we get neurons with v0 below 1 firing.
+
+## Full Example
+They provide the example code below and ask if we can figure out what it is doing based on everything we have learned so far. 
+```
+start_scope()
+
+N = 1000
+tau = 10*ms
+vr = -70*mV
+vt0 = -50*mV
+delta_vt0 = 5*mV
+tau_t = 100*ms
+sigma = 0.5*(vt0-vr)
+v_drive = 2*(vt0-vr)
+duration = 100*ms
+
+eqs = '''
+dv/dt = (v_drive+vr-v)/tau + sigma*xi*tau**-0.5 : volt
+dvt/dt = (vt0-vt)/tau_t : volt
+'''
+
+reset = '''
+v = vr
+vt += delta_vt0
+'''
+
+G = NeuronGroup(N, eqs, threshold='v>vt', reset=reset, refractory=5*ms, method='euler')
+spikemon = SpikeMonitor(G)
+
+G.v = 'rand()*(vt0-vr)+vr'
+G.vt = vt0
+
+run(duration)
+
+_ = hist(spikemon.t/ms, 100, histtype='stepfilled', facecolor='k', weights=list(ones(len(spikemon))/(N*defaultclock.dt)))
+xlabel('Time (ms)')
+ylabel('Instantaneous firing rate (sp/s)');
+```
+Starting with the differential equation, we can see that there are a few more pieces here. We have `v_drive` and `vr` as new elements. Weirdly, `vdrive` is just `2*(vt0-vr)` which means we could rewrite the numerator of the differential equation as `2*vt0-vr-v` right? I am guessing these variables mean something in the world of neuroscience. Anwyays, this equation also has a familiar looking `xi` term which means it is a stochastic neuron and it has units of volts.
+
+ In addition to the `dv/dt` equation, we also have a differential equation for `dvt/dt`. Peaking ahead to the rest of the code, it looks like vt is being used as the spiking thershold. So we now have an equation for how that changes over time. Note that it is using its own time variable `tau_t`. I wonder why that is. 
+
+ In the reset portion of the code, we see that `v` gets set back to `vr` and vt increments by some delta whenever the neuron spikes. This is super cool. This looks like it will lead to some kind of negative feedback loop where the more you fire, the harder it is to fire. 
+
+ The neuron group will have 1000 neurons. It spikes when `v>vt`, has a refractory period of 5ms and uses euler for its integration method. The initial value of `v` is randomized for each neuron and the initial value of `vt` is set to be the same across all of them. 
+
+ Having seen all this, I am looking back at the differential equation for `vt`. If `vt` is greater than `vt0`, then this term will be negative which means that we will be pulling `vt` back to `vt0`. The opposite is true if `vt<vt0`. So together with the reset mechanism, I think this is a really cool neuron set up where more firing leads to it being harder to fire, but if you wait a long time between fires, the firing threshold comes back down to the original value. Super cool! Looking at their plots it seems to confirm this.

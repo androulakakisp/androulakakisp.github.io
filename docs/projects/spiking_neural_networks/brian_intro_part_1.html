@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-06-13">
 
-<title>Emergent Intelligence - Brian</title>
+<title>Emergent Intelligence - Brian - Introduction Part 1: Neurons</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Brian</h1>
+<h1 class="title">Brian - Introduction Part 1: Neurons</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Spiking Neural Networks</div>
     <div class="quarto-category">Brian</div>
@@ -179,12 +179,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I will begin learning about spiking neural networks with the <a href="https://briansimulator.org/">Brian</a> toolbox. Yes thats right. Brian. Not Brain. Very funny.</p>
-<p>The reason I want to start with this one is because it seems to have a lot of features for modeling individual neurons. Before making networks of them, it would be great if I built up my understanding of the individual elements.</p>
-<p>The Brian team have very kindly put together a set of <a href="https://brian2.readthedocs.io/en/stable/resources/tutorials/1-intro-to-brian-neurons.html">examples and tutorials</a> on the website, so I figured what better place to start than there. What you will find below is me walking through those examples and commenting on it as I go. I am not copy pasting everything from their examples, so if you want to see all the details I recommend visiting their examples page directly.</p>
-<section id="introduction-to-brian-part-1-neurons" class="level3">
-<h3 class="anchored" data-anchor-id="introduction-to-brian-part-1-neurons">Introduction to Brian Part 1: Neurons</h3>
-</section>
+<p>I will begin learning about spiking neural networks with the <a href="https://briansimulator.org/">Brian</a> toolbox. Yes thats right. Brian. Not Brain. Very funny. The reason I want to start with Brian is because it seems to have a lot of features for modeling individual neurons. Before making networks of them, it would be great if I built up my understanding of the individual spiking neurons are modeled.</p>
+<p>The Brian team have very kindly put together a set of <a href="https://brian2.readthedocs.io/en/stable/resources/tutorials/1-intro-to-brian-neurons.html">examples and tutorials</a> on the website, so I figured what better place to start than there. What you will find below is me walking through those examples and commenting on it as I go. It is an objectively less helpful version of what is on their examples page, so if you want to see all the details I recommend visiting their examples page directly. I will have one post for each of their tutorials and plan to do a couple small experiments with all this knowledge after I am done, so feel free to skip these tutorial posts and go straight to the experiments.</p>
 <section id="units" class="level2">
 <h2 class="anchored" data-anchor-id="units">Units</h2>
 <p>In brain, we can attach units to our quantities by multiplying them by the unit name. For example,</p>
@@ -206,8 +202,119 @@ dv/dt = (1-v)/tau : 1
 <p>We can use this setup to create a neuron as follows</p>
 <pre><code>G = NeuronGroup(1,eqs)</code></pre>
 <p>As is indicated by the name, you can only create ‘groups’ of neurons in Brian. The two arguments here are the number of neurons in the group (in this case <code>1</code>) and the defining differential equations.</p>
-<p>To simulate the neuron, we can now simply call the <code>run</code> command</p>
+<p>To simulate the neuron, we can now simply call the <code>run</code> command with an input that specifies how for into the future to simulate.</p>
 <pre><code>run(100*ms)</code></pre>
+<p>To see what happened, you can directly look at the vairable <code>G.v[0]</code> before and after running. Alternatively, Brian has a thing called a ‘state monitor’ that records the values oa specific neurons while the simulation runs.</p>
+<pre><code>M = StateMonitor(G,'v',record=0)</code></pre>
+<p>The first two arguments specify the group we want to record from and the variable that we want to record. The third argument specifies the index of the neuron in that group that we want to record (in this case there is only one neuron so we can only specify 0). Once you set up this state monitor and run the simulation, you can look at all the values of <code>v</code> over time. Pretty cool!</p>
+<pre><code>plot(M.t/ms, M.v[0])
+xlabel('Time (ms)')
+ylabel('v');</code></pre>
+</section>
+<section id="adding-spikes" class="level2">
+<h2 class="anchored" data-anchor-id="adding-spikes">Adding Spikes</h2>
+<p>Now that we know how to set all this up, adding spikes is actually pretty straight forward. We simply specify a threshold for our variable, and a value to reset to after the spike has triggered.</p>
+<pre><code>G = NeuronGroup(1, eqs, threshold='v&gt;0.8', reset='v = 0', method='exact')
+spikemon = SpikeMonitor(G)
+run(50*ms)
+print('Spike times: %s' % spikemon.t[:])</code></pre>
+<p>Note that in the example above, we also created a ‘Spike Monitor’ that looks out our neuron group G and records all the spiking times.</p>
+</section>
+<section id="refractoriness" class="level2">
+<h2 class="anchored" data-anchor-id="refractoriness">Refractoriness</h2>
+<p>Neuron models often want to model something called refractoriness. The refractory period specifies the amount of time after a firing even the neuron must wait before firing again. Brain handles this in a pretty stright forward way. We simply add another input to our neruon model that specifies how long we want the refractory period to be.</p>
+<pre><code>tau = 10*ms
+eqs = '''
+dv/dt = (1-v)/tau : 1 (unless refractory)
+'''
+
+G = NeuronGroup(1, eqs, threshold='v&gt;0.8', reset='v = 0', refractory=5*ms, method='exact')</code></pre>
+<p>Note that we also added <code>(unless refractory)</code> to the differential equation definition. This means that the neuron will follow the specified differential equation unless the neuron is refractory. In those cases, it will switch off the differential equation and remain constant.</p>
+</section>
+<section id="multiple-neurons" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-neurons">Multiple Neurons</h2>
+<p>Now we start getting to the fun stuff. Lets add some more neurons to our neuron group. To do this, we can simply modify the first argument in ‘NeuronGroup’. And to make things interesting we can also randomly initialize the starting value of the neurons and set up a spike monitor.</p>
+<pre><code>G = NeuronGroup(100, eqs, threshold='v&gt;1', reset='v=0', method='exact')
+G.v = 'rand()'
+sm = SpikeMonitor(G)</code></pre>
+<p>When looking at the spike monitor, we can look at <code>sm.i</code>. to get the neuron index that corresponds to each of the spikes in <code>sm.t</code>. We can use this to make a raster plot which apparently is something that is common to look at in neuroscience.</p>
+<pre><code>plot(sm.t/ms, sm.i, '.k')
+xlabel('Time (ms)')
+ylabel('Neuron index');</code></pre>
+</section>
+<section id="parameters" class="level2">
+<h2 class="anchored" data-anchor-id="parameters">Parameters</h2>
+<p>In the previous example, all the neurons in the group were exactly the same with the exeption of their random starting value. We can do some more interesting stuff by adding in per-neuron parameters. Below is an example of how to do this</p>
+<pre><code>N = 100
+tau = 10*ms
+v0_max = 3.
+duration = 1000*ms
+
+eqs = '''
+dv/dt = (v0-v)/tau : 1 (unless refractory)
+v0 : 1
+'''
+
+G = NeuronGroup(N, eqs, threshold='v&gt;1', reset='v=0', refractory=5*ms, method='exact')
+M = SpikeMonitor(G)
+
+G.v0 = 'i*v0_max/(N-1)'
+
+run(duration)</code></pre>
+<p>Lets walk through this. To start, we have modified our differential equation to now have a parameters <code>v0</code>. We have specified that this value is unitless. We set up the neuron group with 100 neurons that spike when v&gt;1 and have a 5ms refractory period. We have also specified that each neuron should set their v0 parameters according to <code>G.v0 = 'i*v0_max/(N-1)'</code>. I am curious if this <code>N</code> term needs to be the same variable name as is used in the input of the NeuronGroup. Let me test it out.</p>
+<p>If I leave the equation for <code>G.vo</code> the same but change the variable N to be P everywhere else in this example, it still works. So it looks like you should use N in that equation to represent the number of neurons no matter what you named it when making the neuron group.</p>
+</section>
+<section id="stochastic-neurons" class="level2">
+<h2 class="anchored" data-anchor-id="stochastic-neurons">Stochastic Neurons</h2>
+<p>We can also model some noise in our neurons by using the symbol <code>xi</code> in our differential equations. Note that because of the way stochastic differentials scale with time, we need to make sure we multiply <code>xi</code> by <code>tau</code>.</p>
+<pre><code>eqs = '''
+dv/dt = (v0-v)/tau+0.2*xi*tau**-0.5 : 1 (unless refractory)
+v0 : 1
+'''
+G = NeuronGroup(N, eqs, threshold='v&gt;1', reset='v=0', refractory=5*ms, method='euler')</code></pre>
+<p>We also changed the method argument of the neuron group to be <code>euler</code>. What is cool about these stochastic neurons is that now we get neurons with v0 below 1 firing.</p>
+</section>
+<section id="full-example" class="level2">
+<h2 class="anchored" data-anchor-id="full-example">Full Example</h2>
+<p>They provide the example code below and ask if we can figure out what it is doing based on everything we have learned so far.</p>
+<pre><code>start_scope()
+
+N = 1000
+tau = 10*ms
+vr = -70*mV
+vt0 = -50*mV
+delta_vt0 = 5*mV
+tau_t = 100*ms
+sigma = 0.5*(vt0-vr)
+v_drive = 2*(vt0-vr)
+duration = 100*ms
+
+eqs = '''
+dv/dt = (v_drive+vr-v)/tau + sigma*xi*tau**-0.5 : volt
+dvt/dt = (vt0-vt)/tau_t : volt
+'''
+
+reset = '''
+v = vr
+vt += delta_vt0
+'''
+
+G = NeuronGroup(N, eqs, threshold='v&gt;vt', reset=reset, refractory=5*ms, method='euler')
+spikemon = SpikeMonitor(G)
+
+G.v = 'rand()*(vt0-vr)+vr'
+G.vt = vt0
+
+run(duration)
+
+_ = hist(spikemon.t/ms, 100, histtype='stepfilled', facecolor='k', weights=list(ones(len(spikemon))/(N*defaultclock.dt)))
+xlabel('Time (ms)')
+ylabel('Instantaneous firing rate (sp/s)');</code></pre>
+<p>Starting with the differential equation, we can see that there are a few more pieces here. We have <code>v_drive</code> and <code>vr</code> as new elements. Weirdly, <code>vdrive</code> is just <code>2*(vt0-vr)</code> which means we could rewrite the numerator of the differential equation as <code>2*vt0-vr-v</code> right? I am guessing these variables mean something in the world of neuroscience. Anwyays, this equation also has a familiar looking <code>xi</code> term which means it is a stochastic neuron and it has units of volts.</p>
+<p>In addition to the <code>dv/dt</code> equation, we also have a differential equation for <code>dvt/dt</code>. Peaking ahead to the rest of the code, it looks like vt is being used as the spiking thershold. So we now have an equation for how that changes over time. Note that it is using its own time variable <code>tau_t</code>. I wonder why that is.</p>
+<p>In the reset portion of the code, we see that <code>v</code> gets set back to <code>vr</code> and vt increments by some delta whenever the neuron spikes. This is super cool. This looks like it will lead to some kind of negative feedback loop where the more you fire, the harder it is to fire.</p>
+<p>The neuron group will have 1000 neurons. It spikes when <code>v&gt;vt</code>, has a refractory period of 5ms and uses euler for its integration method. The initial value of <code>v</code> is randomized for each neuron and the initial value of <code>vt</code> is set to be the same across all of them.</p>
+<p>Having seen all this, I am looking back at the differential equation for <code>vt</code>. If <code>vt</code> is greater than <code>vt0</code>, then this term will be negative which means that we will be pulling <code>vt</code> back to <code>vt0</code>. The opposite is true if <code>vt&lt;vt0</code>. So together with the reset mechanism, I think this is a really cool neuron set up where more firing leads to it being harder to fire, but if you wait a long time between fires, the firing threshold comes back down to the original value. Super cool! Looking at their plots it seems to confirm this.</p>
 
 
 </section>
