@@ -35,32 +35,11 @@
     "text": "Hello World\nThis is a template for a post"
   },
   {
-    "objectID": "projects/spiking_neural_networks/index.html",
-    "href": "projects/spiking_neural_networks/index.html",
-    "title": "Spiking Neural Networks",
+    "objectID": "projects/spiking_neural_networks/backstory.html",
+    "href": "projects/spiking_neural_networks/backstory.html",
+    "title": "Backstory",
     "section": "",
-    "text": "I have two primary goals with this project. First, I want to spend some time learning about the various spiking neural network toolboxes that are available. Second, I want to try doing some basic neuroevolution with them. I really like getting into the low level details of evolutionary algorithms so I would like to do the evolutionary part without toolboxes. But I am also open to using some toolboxes if they seem cool or are tightly integrated with the SNN toolbox.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBackstory\n\n\n\n\n\n\nSpiking Neural Networks\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/immune_system/template_post.html",
-    "href": "projects/immune_system/template_post.html",
-    "title": "Tempalte",
-    "section": "",
-    "text": "Hello World\nThis is a template for a post"
-  },
-  {
-    "objectID": "projects/cellular_automata/template_post.html",
-    "href": "projects/cellular_automata/template_post.html",
-    "title": "Tempalte",
-    "section": "",
-    "text": "Hello World\nThis is a template for a post"
-  },
-  {
-    "objectID": "projects/cellular_automata/index.html",
-    "href": "projects/cellular_automata/index.html",
-    "title": "Cellular Automata",
-    "section": "",
-    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "The first thing that got me into machine learning was MarI/O. I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made Mario blaze through the level unscathed. Even more mind blowing was that this set of connections could be obtained through an evolutionary process. No direct design. Just trial and error and environmental pressures. Ever since then, I have been obsessed with evolutionary optimization methods and have tried to sneak them into my work whenever I can.\nThese days, much of the work being done with neural networks seems to favor the almighty back propagation algorithm, and for good reason. Evolutionary methods can be very sample inefficient, resulting in significantly worse performance as compared to back propagation for the same number of training passes. Back propagation based methods are able to do something truly amazing. They constantly move towards a better solution in way that also seemingly avoids local optima. The only catch is that they require that the network be differentiable.\nAs the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche.\nIn come spiking neural networks. I don’t know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. There are many pros/cons to these kinds of networks (many of which I am still learning about), but one of the biggest drawbacks is that it is not differentiable. More precisely, its derivatives are either zero or undefined which ends up blocking the gradient flow required by back propagation. Furthermore, because the SNNs process information over time, doing back propagation would require storing states across multiple time steps. Evolutionary methods have neither of these problems. This makes SNNs seem like a great place to get some experience with neuroevolution."
   },
   {
     "objectID": "projects/immune_system/index.html",
@@ -70,11 +49,53 @@
     "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/spiking_neural_networks/backstory.html",
-    "href": "projects/spiking_neural_networks/backstory.html",
-    "title": "Backstory",
+    "objectID": "projects/cellular_automata/index.html",
+    "href": "projects/cellular_automata/index.html",
+    "title": "Cellular Automata",
     "section": "",
-    "text": "The first thing that got me into machine learning was MarI/O. I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made Mario blaze through the level unscathed. Even more mind blowing was that this set of connections could be obtained through an evolutionary process. No direct design. Just trial and error and environmental pressures. Ever since then, I have been obsessed with evolutionary optimization methods and have tried to sneak them into my work whenever I can.\nThese days, much of the work being done with neural networks seems to favor the almighty back propagation algorithm, and for good reason. Evolutionary methods can be very sample inefficient, resulting in significantly worse performance as compared to back propagation for the same number of training passes. Back propagation based methods are able to do something truly amazing. They constantly move towards a better solution in way that also seemingly avoids local optima. The only catch is that they require that the network be differentiable.\nAs the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche.\nIn come spiking neural networks. I don’t know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. There are many pros/cons to these kinds of networks (many of which I am still learning about), but one of the biggest drawbacks is that it is not differentiable. More precisely, its derivatives are either zero or undefined which ends up blocking the gradient flow required by back propagation. Furthermore, because the SNNs process information over time, doing back propagation would require storing states across multiple time steps. Evolutionary methods have neither of these problems. This makes SNNs seem like a great place to get some experience with neuroevolution."
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/cellular_automata/template_post.html",
+    "href": "projects/cellular_automata/template_post.html",
+    "title": "Tempalte",
+    "section": "",
+    "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/immune_system/template_post.html",
+    "href": "projects/immune_system/template_post.html",
+    "title": "Tempalte",
+    "section": "",
+    "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/spiking_neural_networks/index.html",
+    "href": "projects/spiking_neural_networks/index.html",
+    "title": "Spiking Neural Networks",
+    "section": "",
+    "text": "I have two primary goals with this project. First, I want to spend some time learning about the various spiking neural network toolboxes that are available. Second, I want to try doing some basic neuroevolution with them. I really like getting into the low level details of evolutionary algorithms so I would like to do the evolutionary part without toolboxes. But I am also open to using some toolboxes if they seem cool or are tightly integrated with the SNN toolbox.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBrian\n\n\n\n\n\n\nSpiking Neural Networks\n\n\nBrian\n\n\n\n\n\n\n\n\n\nJun 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBackstory\n\n\n\n\n\n\nSpiking Neural Networks\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/spiking_neural_networks/brian.html",
+    "href": "projects/spiking_neural_networks/brian.html",
+    "title": "Brian",
+    "section": "",
+    "text": "I will begin learning about spiking neural networks with the Brian toolbox. Yes thats right. Brian. Not Brain. Very funny.\nThe reason I want to start with this one is because it seems to have a lot of features for modeling individual neurons. Before making networks of them, it would be great if I built up my understanding of the individual elements.\nThe Brian team have very kindly put together a set of examples and tutorials on the website, so I figured what better place to start than there. What you will find below is me walking through those examples and commenting on it as I go. I am not copy pasting everything from their examples, so if you want to see all the details I recommend visiting their examples page directly."
+  },
+  {
+    "objectID": "projects/spiking_neural_networks/brian.html#units",
+    "href": "projects/spiking_neural_networks/brian.html#units",
+    "title": "Brian",
+    "section": "Units",
+    "text": "Units\nIn brain, we can attach units to our quantities by multiplying them by the unit name. For example,\n1000*amp\n1e6*volt\n1000*namp\nThats pretty cool. Even more cool is the fact that these units now effect all downstream operations. So you can do things like\n10*nA*5*Mohm\nto get an output in units of Volts! If you try to combine units in a way that doesn’t make sense (like adding volts to amps) it will result in an error."
+  },
+  {
+    "objectID": "projects/spiking_neural_networks/brian.html#simple-model",
+    "href": "projects/spiking_neural_networks/brian.html#simple-model",
+    "title": "Brian",
+    "section": "Simple Model",
+    "text": "Simple Model\nThe spiking model of a neuron is temporal. This means that we must be able to model its output as a function of time. In Brian, this is done using differential equations.\ntau = 10*ms\neqs = '''\ndv/dt = (1-v)/tau : 1\n'''\nIn this example, tau represents our time step and eqs represents the differential equation used for modeling the neuron. The information to the right of the : symbol specifies the units of the variable that is defined by that differential equation (in this case v). When you see 1, that means unitless. Note that in this differential equation, we must include the division by tau. The left side of the equation dv/dt has units of 1/seconds so the right side must match.\nWe can use this setup to create a neuron as follows\nG = NeuronGroup(1,eqs)\nAs is indicated by the name, you can only create ‘groups’ of neurons in Brian. The two arguments here are the number of neurons in the group (in this case 1) and the defining differential equations.\nTo simulate the neuron, we can now simply call the run command\nrun(100*ms)"
   },
   {
     "objectID": "projects/ants/index.html",

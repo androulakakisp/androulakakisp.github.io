@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="SNNs">
+<meta name="dcterms.date" content="2026-06-13">
 
-<title>Emergent Intelligence - Spiking Neural Networks</title>
+<title>Emergent Intelligence - Brian</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,70 +69,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -206,27 +146,30 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Brian">Brian <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Spiking Neural Networks">Spiking Neural Networks <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Spiking Neural Networks</h1>
-</div>
-
-<div>
-  <div class="description">
-    SNNs
+<h1 class="title">Brian</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Spiking Neural Networks</div>
+    <div class="quarto-category">Brian</div>
   </div>
-</div>
+  </div>
+
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 13, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -236,81 +179,40 @@ window.Quarto = {
 </header>
 
 
-<p>I have two primary goals with this project. First, I want to spend some time learning about the various spiking neural network toolboxes that are available. Second, I want to try doing some basic neuroevolution with them. I really like getting into the low level details of evolutionary algorithms so I would like to do the evolutionary part without toolboxes. But I am also open to using some toolboxes if they seem cool or are tightly integrated with the SNN toolbox.</p>
+<p>I will begin learning about spiking neural networks with the <a href="https://briansimulator.org/">Brian</a> toolbox. Yes thats right. Brian. Not Brain. Very funny.</p>
+<p>The reason I want to start with this one is because it seems to have a lot of features for modeling individual neurons. Before making networks of them, it would be great if I built up my understanding of the individual elements.</p>
+<p>The Brian team have very kindly put together a set of <a href="https://brian2.readthedocs.io/en/stable/resources/tutorials/1-intro-to-brian-neurons.html">examples and tutorials</a> on the website, so I figured what better place to start than there. What you will find below is me walking through those examples and commenting on it as I go. I am not copy pasting everything from their examples, so if you want to see all the details I recommend visiting their examples page directly.</p>
+<section id="introduction-to-brian-part-1-neurons" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-to-brian-part-1-neurons">Introduction to Brian Part 1: Neurons</h3>
+</section>
+<section id="units" class="level2">
+<h2 class="anchored" data-anchor-id="units">Units</h2>
+<p>In brain, we can attach units to our quantities by multiplying them by the unit name. For example,</p>
+<pre><code>1000*amp
+1e6*volt
+1000*namp</code></pre>
+<p>Thats pretty cool. Even more cool is the fact that these units now effect all downstream operations. So you can do things like</p>
+<pre><code>10*nA*5*Mohm</code></pre>
+<p>to get an output in units of Volts! If you try to combine units in a way that doesn’t make sense (like adding volts to amps) it will result in an error.</p>
+</section>
+<section id="simple-model" class="level2">
+<h2 class="anchored" data-anchor-id="simple-model">Simple Model</h2>
+<p>The spiking model of a neuron is temporal. This means that we must be able to model its output as a function of time. In Brian, this is done using differential equations.</p>
+<pre><code>tau = 10*ms
+eqs = '''
+dv/dt = (1-v)/tau : 1
+'''</code></pre>
+<p>In this example, <code>tau</code> represents our time step and <code>eqs</code> represents the differential equation used for modeling the neuron. The information to the right of the <code>:</code> symbol specifies the units of the variable that is defined by that differential equation (in this case v). When you see <code>1</code>, that means unitless. Note that in this differential equation, we must include the division by tau. The left side of the equation <code>dv/dt</code> has units of <code>1/seconds</code> so the right side must match.</p>
+<p>We can use this setup to create a neuron as follows</p>
+<pre><code>G = NeuronGroup(1,eqs)</code></pre>
+<p>As is indicated by the name, you can only create ‘groups’ of neurons in Brian. The two arguments here are the number of neurons in the group (in this case <code>1</code>) and the defining differential equations.</p>
+<p>To simulate the neuron, we can now simply call the <code>run</code> command</p>
+<pre><code>run(100*ms)</code></pre>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Spiking Neural Networks,Brian" data-listing-date-sort="1781334000000" data-listing-file-modified-sort="1781369744606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
-<div class="thumbnail">
-<p><a href="../../projects/spiking_neural_networks/brian.html" class="no-external"></a></p><a href="../../projects/spiking_neural_networks/brian.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../../projects/spiking_neural_networks/brian.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../projects/spiking_neural_networks/brian.html" class="no-external">Brian</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../projects/spiking_neural_networks/brian.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Spiking Neural Networks'); return false;">
-Spiking Neural Networks
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Brian'); return false;">
-Brian
-</div>
-</div>
-<div class="listing-description">
-<a href="../../projects/spiking_neural_networks/brian.html" class="no-external">I will begin learning about spiking neural networks with the Brian toolbox. Yes thats right. Brian. Not Brain. Very funny.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../projects/spiking_neural_networks/brian.html" class="no-external">
-<div class="listing-date">
-Jun 13, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Spiking Neural Networks" data-listing-date-sort="1780729200000" data-listing-file-modified-sort="1781145162989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="400">
-<div class="thumbnail">
-<p><a href="../../projects/spiking_neural_networks/backstory.html" class="no-external"></a></p><a href="../../projects/spiking_neural_networks/backstory.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../../projects/spiking_neural_networks/backstory.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../projects/spiking_neural_networks/backstory.html" class="no-external">Backstory</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../../projects/spiking_neural_networks/backstory.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Spiking Neural Networks'); return false;">
-Spiking Neural Networks
-</div>
-</div>
-<div class="listing-description">
-<a href="../../projects/spiking_neural_networks/backstory.html" class="no-external">The first thing that got me into machine learning was MarI/O. I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../../projects/spiking_neural_networks/backstory.html" class="no-external">
-<div class="listing-date">
-Jun 6, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -9,9 +9,9 @@
     ]
   },
   {
-    "listing": "/projects/spiking_neural_networks/index.html",
+    "listing": "/projects/immune_system/index.html",
     "items": [
-      "/projects/spiking_neural_networks/backstory.html"
+      "/projects/immune_system/template_post.html"
     ]
   },
   {
@@ -21,9 +21,10 @@
     ]
   },
   {
-    "listing": "/projects/immune_system/index.html",
+    "listing": "/projects/spiking_neural_networks/index.html",
     "items": [
-      "/projects/immune_system/template_post.html"
+      "/projects/spiking_neural_networks/brian.html",
+      "/projects/spiking_neural_networks/backstory.html"
     ]
   },
   {
