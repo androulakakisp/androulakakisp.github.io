@@ -1,0 +1,85 @@
+---
+title: "Brian - Evolving Neurons"
+date: "2026-06-14"
+description: "description"
+categories: [Spiking Neural Networks, Brian, Evolution]
+---
+
+I just finished [part 1](https://brian2.readthedocs.io/en/stable/resources/tutorials/1-intro-to-brian-neurons.html) of the tutorial series on the Brian webpage. I should probably move on to part 2, but I'm too excited to try something out. So to begin, I want to do a quick experiment in which I evolve individual neurons. If you want to follow along with this experiment as we go through, the code is on gitlab. 
+
+### Temperature Mapping Neuron
+
+Lets start with a super basic problem. I want to see if I can train a single neuron to become a temperature sensor. I want it to map a continuous temperature reading from an input sensor into a spike frequency whose inverse equals the temperature. 
+$$
+T = 1/f
+$$
+
+I am picking this problem because I know it is possible figure out what the equations for this should be by hand. That being said, I am not going to compute it. Instead I will try to use an evolutionary algorithm. Keep in mind that I will be forcing evolutionary algorithms a lot on this blog even though they may not always be the best tool. I am over using them because I find them very interesting and because I want to get better with them. 
+
+
+## Defining the Evolutionary Loop
+
+We will use the standard evolutionary loop shown in pseudo code below.
+```
+NUM_GENERATIONS = G
+POPULATION_SIZE = P
+
+pop = initialize_population(P)
+
+for g=1:NUM_GENERATIONS
+
+    pop = evaluate_population(pop)
+
+    pop = cross_population(pop)
+
+    pop = mutate_population(pop)
+
+end
+
+```
+In this context, each member of `pop` is a *genome* vector containing values for the various parameters that define our neurons behavior. When we evaluate a population, we need to manifest each of these genomes into an actual neruon that we can run using Brian. Once we run it, we can compare its output spiking rate to the input temperature and assign a fitness to the genome. Crossing and mutation will likely be pretty simple in this problem with. The following sections will go into details on each of these steps.
+
+## Defining the Genome
+
+Lets start by setting up the Brian code to support this, and then go through and figure out what parts we want to include in the genome. Below is some basic Brian code taken from the tutorial.
+```
+N = 50
+tau = 10*ms
+duration = 1000*ms
+
+eqs = '''
+dv/dt = (v0-v)/tau : volt (unless refractory)
+v0 : volt
+'''
+
+G = NeuronGroup(N, eqs, threshold='v>1', reset='v=0', refractory=5*ms, method='exact')
+M = SpikeMonitor(G)
+
+# Set v0
+
+run(duration)
+```
+Lets stick with the same overall format and just pulling the spiking threshold, refractory period, and v0 into our genome. To do this we need to modify the code to treat these values as parameters. Based on the things we learned in the tutorial, this would look something like this.
+```
+N = 50
+tau = 10*ms
+duration = 1000*ms
+
+eqs = '''
+dv/dt = (v0-v)/tau : volt (unless refractory)
+v0 : volt
+v_thresh : volt
+tau_ref : second
+'''
+
+G = NeuronGroup(N, eqs, threshold='v>v_thresh', reset='v=0', refractory=tau_ref, method='exact')
+M = SpikeMonitor(G)
+
+# Set v0 from genome
+# Set v_thresh from genome
+# Set tau_ref from genome
+
+run(duration)
+```
+
+Now all we need 

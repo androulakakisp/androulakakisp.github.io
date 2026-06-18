@@ -9,15 +9,9 @@
     ]
   },
   {
-    "listing": "/projects/immune_system/index.html",
+    "listing": "/projects/ants/index.html",
     "items": [
-      "/projects/immune_system/template_post.html"
-    ]
-  },
-  {
-    "listing": "/projects/cellular_automata/index.html",
-    "items": [
-      "/projects/cellular_automata/template_post.html"
+      "/projects/ants/template_post.html"
     ]
   },
   {
@@ -28,9 +22,15 @@
     ]
   },
   {
-    "listing": "/projects/ants/index.html",
+    "listing": "/projects/cellular_automata/index.html",
     "items": [
-      "/projects/ants/template_post.html"
+      "/projects/cellular_automata/a_new_kind_of_science.html"
+    ]
+  },
+  {
+    "listing": "/projects/immune_system/index.html",
+    "items": [
+      "/projects/immune_system/template_post.html"
     ]
   }
 ]

@@ -7,32 +7,67 @@
     "text": "“You know, the more I think about it, the more I believe that no-one is actually worried about AIs taking over the world or anything like that, no matter what they say.\nWhat they’re really worried about is that someone might prove, once and for all, that consciousness can arise from matter. And I kind of understand why they find it so terrifying. If we can create a sentient being, where does that leave the soul? Without mystery, how can we see ourselves as anything other than machines? And if we are machines, what hope do we have that death is not the end?\nWhat really scares people is not the artificial intelligence in the computer, but the ‘natural’ intelligence they see in the mirror.”\n\nThe Talos Principle\n\n\n\n\n\n\n\n\n\n\nAnts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCellular Automata\n\n\nCollection of thoughts and tests where simple rules interact to form complex results\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImmune System\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpiking Neural Networks\n\n\nLearning how to simulate and train spiking nerual networks.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nWelcome!\nWelcome to the Emergent Intelligence Blog! This website contains posts detailing my exploration into the world of emergent intelligence and beyond. Before continuing, I think it is important that you as the reader understand what the purpose of this blog is. It is first and foremost a way for me to document my progress and keep my self honest about my own scientific curiosities. By documenting it in this form it gives me a concrete way to measure my progress and build on my own work. Secondly, it is a way for me to practice my science communication skills. Great science communicators are the reason I got into all this stuff in the first place, so I would like to start paying it forward by communicating to others about the things I am passionate about.\n\n\nWhy I’m Not Reading Papers (Yet)\nI have found in the past that when I discover a new topic I am excited about, I immediately go and read about what everyone in the field has been doing with it. This is clearly an important step for coming up to speed on the state of the art and is a critical first step if you want to do research and publish in the domain. However, I have recently noticed that reading papers seems to become the end of my intellectual journey. I spend a couple weeks learning as much as I can, and then end up asking my self:\n\n“Why spend my time doing a tiny simulation when there are labs full of people working on this full time?”\n“Surely there is nothing I can do that they won’t already have tried…”\n“If I really want to work on X, I first need to be an expert in Y, which means I need to learn about Z, etc….”\n\nThese kinds of feelings were surmountable in graduate school when I had the time and support to actually dedicate myself fully to a topic like this and get to the forefront of knowledge to make my impact. These days, with a full time job and other responsibilities, these kinds of thought quickly turn into a feeling of futility and inaction. I end up reading papers from the sidelines and daydream about all the cool things I could be trying out. Well daydream no more.\n\n\nLearning by Doing\nThe time has come for me to just sit down and do the things that I find interesting. I am removing all expectations of making something useful or novel, and just learning and experimenting because its fun. I will probably make a bunch of mistakes. I will probably go down countless dead ends. I will probably reinvent the wheel a hundred times. But in the process, I will get to satisfy my sense of curiosity and have a blast doing it. Plus I may end up learning how to make a pretty damn good wheel.\nIf this journey sounds like fun to you as well, then welcome aboard. I hope this helps inspire you to sit down and try something out for fun too.\n\n\nAI Disclosure\nI am not using AI to generate any of the text you read or images you see. What would even be the point. I will however be using AI to help me understand how to use the various python packages so some of the code you see may be AI generated. I will be sure to mark all such instances appropriately."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "About this blog"
   },
   {
-    "objectID": "posts/python-test/index.html",
-    "href": "posts/python-test/index.html",
-    "title": "My First Python Code Post",
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
     "section": "",
-    "text": "Watch how Quarto can actually run Python code and show the result!\n\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]"
+    "text": "This is a post with executable code.\n\n\n\n\n\n\nNote\n\n\n\nThis is a standard note. Perfect for extra context."
   },
   {
-    "objectID": "posts/python-test/index.html#running-python-in-quarto",
-    "href": "posts/python-test/index.html#running-python-in-quarto",
-    "title": "My First Python Code Post",
+    "objectID": "projects/ants/index.html",
+    "href": "projects/ants/index.html",
+    "title": "Ants",
     "section": "",
-    "text": "Watch how Quarto can actually run Python code and show the result!\n\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]"
+    "text": "Ants are amazing. How do they do so much with such little individual capability? We investigate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/ants/template_post.html",
-    "href": "projects/ants/template_post.html",
+    "objectID": "projects/spiking_neural_networks/backstory.html",
+    "href": "projects/spiking_neural_networks/backstory.html",
+    "title": "Backstory",
+    "section": "",
+    "text": "The first thing that got me into machine learning was MarI/O. I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made Mario blaze through the level unscathed. Even more mind blowing was that this set of connections could be obtained through an evolutionary process. No direct design. Just trial and error and environmental pressures. Ever since then, I have been obsessed with evolutionary optimization methods and have tried to sneak them into my work whenever I can.\nThese days, much of the work being done with neural networks seems to favor the almighty back propagation algorithm, and for good reason. Evolutionary methods can be very sample inefficient, resulting in significantly worse performance as compared to back propagation for the same number of training passes. Back propagation based methods are able to do something truly amazing. They constantly move towards a better solution in way that also seemingly avoids local optima. The only catch is that they require that the network be differentiable.\nAs the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche.\nIn come spiking neural networks. I don’t know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. There are many pros/cons to these kinds of networks (many of which I am still learning about), but one of the biggest drawbacks is that it is not differentiable. More precisely, its derivatives are either zero or undefined which ends up blocking the gradient flow required by back propagation. Furthermore, because the SNNs process information over time, doing back propagation would require storing states across multiple time steps. Evolutionary methods have neither of these problems. This makes SNNs seem like a great place to get some experience with neuroevolution."
+  },
+  {
+    "objectID": "projects/spiking_neural_networks/index.html",
+    "href": "projects/spiking_neural_networks/index.html",
+    "title": "Spiking Neural Networks",
+    "section": "",
+    "text": "I have two primary goals with this project. First, I want to spend some time learning about the various spiking neural network toolboxes that are available. Second, I want to try doing some basic neuroevolution with them. I really like getting into the low level details of evolutionary algorithms so I would like to do the evolutionary part without toolboxes. But I am also open to using some toolboxes if they seem cool or are tightly integrated with the SNN toolbox.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJun 13, 2026\n\n\nBrian - Introduction Part 1: Neurons\n\n\n \n\n\n\n\nJun 6, 2026\n\n\nBackstory\n\n\n \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/immune_system/template_post.html",
+    "href": "projects/immune_system/template_post.html",
     "title": "Tempalte",
     "section": "",
     "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/cellular_automata/a_new_kind_of_science.html",
+    "href": "projects/cellular_automata/a_new_kind_of_science.html",
+    "title": "Tempalte",
+    "section": "",
+    "text": "Hello World\nThis is a template for a post"
+  },
+  {
+    "objectID": "projects/cellular_automata/index.html",
+    "href": "projects/cellular_automata/index.html",
+    "title": "Cellular Automata",
+    "section": "",
+    "text": "My goal with this project is explore the world of cellular automata while also getting some practice with python. I am primarily a MATLAB user so I want to spend some time getting familiar with python on a basic set of problems. Cellular automata provide a great opportunity for this because they are just a simple set of rules that are iterated upon to create interesting patterns. I plan to begin with basic 1D cellular automata and then progress to more interesting problems.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/immune_system/index.html",
+    "href": "projects/immune_system/index.html",
+    "title": "Immune System",
+    "section": "",
+    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/spiking_neural_networks/brian_intro_part_1.html",
@@ -98,66 +133,52 @@
     "text": "Full Example\nThey provide the example code below and ask if we can figure out what it is doing based on everything we have learned so far.\nstart_scope()\n\nN = 1000\ntau = 10*ms\nvr = -70*mV\nvt0 = -50*mV\ndelta_vt0 = 5*mV\ntau_t = 100*ms\nsigma = 0.5*(vt0-vr)\nv_drive = 2*(vt0-vr)\nduration = 100*ms\n\neqs = '''\ndv/dt = (v_drive+vr-v)/tau + sigma*xi*tau**-0.5 : volt\ndvt/dt = (vt0-vt)/tau_t : volt\n'''\n\nreset = '''\nv = vr\nvt += delta_vt0\n'''\n\nG = NeuronGroup(N, eqs, threshold='v&gt;vt', reset=reset, refractory=5*ms, method='euler')\nspikemon = SpikeMonitor(G)\n\nG.v = 'rand()*(vt0-vr)+vr'\nG.vt = vt0\n\nrun(duration)\n\n_ = hist(spikemon.t/ms, 100, histtype='stepfilled', facecolor='k', weights=list(ones(len(spikemon))/(N*defaultclock.dt)))\nxlabel('Time (ms)')\nylabel('Instantaneous firing rate (sp/s)');\nStarting with the differential equation, we can see that there are a few more pieces here. We have v_drive and vr as new elements. Weirdly, vdrive is just 2*(vt0-vr) which means we could rewrite the numerator of the differential equation as 2*vt0-vr-v right? I am guessing these variables mean something in the world of neuroscience. Anwyays, this equation also has a familiar looking xi term which means it is a stochastic neuron and it has units of volts.\nIn addition to the dv/dt equation, we also have a differential equation for dvt/dt. Peaking ahead to the rest of the code, it looks like vt is being used as the spiking thershold. So we now have an equation for how that changes over time. Note that it is using its own time variable tau_t. I wonder why that is.\nIn the reset portion of the code, we see that v gets set back to vr and vt increments by some delta whenever the neuron spikes. This is super cool. This looks like it will lead to some kind of negative feedback loop where the more you fire, the harder it is to fire.\nThe neuron group will have 1000 neurons. It spikes when v&gt;vt, has a refractory period of 5ms and uses euler for its integration method. The initial value of v is randomized for each neuron and the initial value of vt is set to be the same across all of them.\nHaving seen all this, I am looking back at the differential equation for vt. If vt is greater than vt0, then this term will be negative which means that we will be pulling vt back to vt0. The opposite is true if vt&lt;vt0. So together with the reset mechanism, I think this is a really cool neuron set up where more firing leads to it being harder to fire, but if you wait a long time between fires, the firing threshold comes back down to the original value. Super cool! Looking at their plots it seems to confirm this."
   },
   {
-    "objectID": "projects/immune_system/index.html",
-    "href": "projects/immune_system/index.html",
-    "title": "Immune System",
-    "section": "",
-    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/cellular_automata/index.html",
-    "href": "projects/cellular_automata/index.html",
-    "title": "Cellular Automata",
-    "section": "",
-    "text": "Test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/cellular_automata/template_post.html",
-    "href": "projects/cellular_automata/template_post.html",
+    "objectID": "projects/ants/template_post.html",
+    "href": "projects/ants/template_post.html",
     "title": "Tempalte",
     "section": "",
     "text": "Hello World\nThis is a template for a post"
   },
   {
-    "objectID": "projects/immune_system/template_post.html",
-    "href": "projects/immune_system/template_post.html",
-    "title": "Tempalte",
+    "objectID": "posts/python-test/index.html",
+    "href": "posts/python-test/index.html",
+    "title": "My First Python Code Post",
     "section": "",
-    "text": "Hello World\nThis is a template for a post"
+    "text": "Watch how Quarto can actually run Python code and show the result!\n\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]"
   },
   {
-    "objectID": "projects/spiking_neural_networks/index.html",
-    "href": "projects/spiking_neural_networks/index.html",
-    "title": "Spiking Neural Networks",
+    "objectID": "posts/python-test/index.html#running-python-in-quarto",
+    "href": "posts/python-test/index.html#running-python-in-quarto",
+    "title": "My First Python Code Post",
     "section": "",
-    "text": "I have two primary goals with this project. First, I want to spend some time learning about the various spiking neural network toolboxes that are available. Second, I want to try doing some basic neuroevolution with them. I really like getting into the low level details of evolutionary algorithms so I would like to do the evolutionary part without toolboxes. But I am also open to using some toolboxes if they seem cool or are tightly integrated with the SNN toolbox.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBrian - Introduction Part 1: Neurons\n\n\n\n\n\n\nSpiking Neural Networks\n\n\nBrian\n\n\n\n\n\n\n\n\n\nJun 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBackstory\n\n\n\n\n\n\nSpiking Neural Networks\n\n\n\n\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Watch how Quarto can actually run Python code and show the result!\n\ndef calculate_squares(numbers):\n    return [n**2 for n in numbers]\n\nmy_list = [1, 2, 3, 4, 5]\nprint(\"Original:\", my_list)\nprint(\"Squares:\", calculate_squares(my_list))\n\nOriginal: [1, 2, 3, 4, 5]\nSquares: [1, 4, 9, 16, 25]"
   },
   {
-    "objectID": "projects/spiking_neural_networks/backstory.html",
-    "href": "projects/spiking_neural_networks/backstory.html",
-    "title": "Backstory",
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
     "section": "",
-    "text": "The first thing that got me into machine learning was MarI/O. I was absolutely blown away at how such a basic set of elements (neurons) could be connected in a way that made Mario blaze through the level unscathed. Even more mind blowing was that this set of connections could be obtained through an evolutionary process. No direct design. Just trial and error and environmental pressures. Ever since then, I have been obsessed with evolutionary optimization methods and have tried to sneak them into my work whenever I can.\nThese days, much of the work being done with neural networks seems to favor the almighty back propagation algorithm, and for good reason. Evolutionary methods can be very sample inefficient, resulting in significantly worse performance as compared to back propagation for the same number of training passes. Back propagation based methods are able to do something truly amazing. They constantly move towards a better solution in way that also seemingly avoids local optima. The only catch is that they require that the network be differentiable.\nAs the current explosion of AI took off, I drifted away from neuroevolution and spent my time learning about other kinds of interesting emergent phenomenon. I never stopped being interested in it so I would check in on what people in the field have been up to, but the massive success of the current back propagation paradigm made the application side of it seem niche.\nIn come spiking neural networks. I don’t know how, but up until a couple weeks ago I did not know that these existed. Instead of outputting a single continuous value, the neurons in a spiking neural network output discrete spatio-temporal spikes. There are many pros/cons to these kinds of networks (many of which I am still learning about), but one of the biggest drawbacks is that it is not differentiable. More precisely, its derivatives are either zero or undefined which ends up blocking the gradient flow required by back propagation. Furthermore, because the SNNs process information over time, doing back propagation would require storing states across multiple time steps. Evolutionary methods have neither of these problems. This makes SNNs seem like a great place to get some experience with neuroevolution."
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "projects/ants/index.html",
-    "href": "projects/ants/index.html",
-    "title": "Ants",
+    "objectID": "drafts/evolving_neurons.html",
+    "href": "drafts/evolving_neurons.html",
+    "title": "Brian - Evolving Neurons",
     "section": "",
-    "text": "Ants are amazing. How do they do so much with such little individual capability? We investigate.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "I just finished part 1 of the tutorial series on the Brian webpage. I should probably move on to part 2, but I’m too excited to try something out. So to begin, I want to do a quick experiment in which I evolve individual neurons. If you want to follow along with this experiment as we go through, the code is on gitlab."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n\n\n\n\n\nNote\n\n\n\nThis is a standard note. Perfect for extra context."
+    "objectID": "drafts/evolving_neurons.html#defining-the-evolutionary-loop",
+    "href": "drafts/evolving_neurons.html#defining-the-evolutionary-loop",
+    "title": "Brian - Evolving Neurons",
+    "section": "Defining the Evolutionary Loop",
+    "text": "Defining the Evolutionary Loop\nWe will use the standard evolutionary loop shown in pseudo code below.\nNUM_GENERATIONS = G\nPOPULATION_SIZE = P\n\npop = initialize_population(P)\n\nfor g=1:NUM_GENERATIONS\n\n    pop = evaluate_population(pop)\n\n    pop = cross_population(pop)\n\n    pop = mutate_population(pop)\n\nend\n\nIn this context, each member of pop is a genome vector containing values for the various parameters that define our neurons behavior. When we evaluate a population, we need to manifest each of these genomes into an actual neruon that we can run using Brian. Once we run it, we can compare its output spiking rate to the input temperature and assign a fitness to the genome. Crossing and mutation will likely be pretty simple in this problem with. The following sections will go into details on each of these steps."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
+    "objectID": "drafts/evolving_neurons.html#defining-the-genome",
+    "href": "drafts/evolving_neurons.html#defining-the-genome",
+    "title": "Brian - Evolving Neurons",
+    "section": "Defining the Genome",
+    "text": "Defining the Genome\nLets start by setting up the Brian code to support this, and then go through and figure out what parts we want to include in the genome. Below is some basic Brian code taken from the tutorial.\nN = 50\ntau = 10*ms\nduration = 1000*ms\n\neqs = '''\ndv/dt = (v0-v)/tau : volt (unless refractory)\nv0 : volt\n'''\n\nG = NeuronGroup(N, eqs, threshold='v&gt;1', reset='v=0', refractory=5*ms, method='exact')\nM = SpikeMonitor(G)\n\n# Set v0\n\nrun(duration)\nLets stick with the same overall format and just pulling the spiking threshold, refractory period, and v0 into our genome. To do this we need to modify the code to treat these values as parameters. Based on the things we learned in the tutorial, this would look something like this.\nN = 50\ntau = 10*ms\nduration = 1000*ms\n\neqs = '''\ndv/dt = (v0-v)/tau : volt (unless refractory)\nv0 : volt\nv_thresh : volt\ntau_ref : second\n'''\n\nG = NeuronGroup(N, eqs, threshold='v&gt;v_thresh', reset='v=0', refractory=tau_ref, method='exact')\nM = SpikeMonitor(G)\n\n# Set v0 from genome\n# Set v_thresh from genome\n# Set tau_ref from genome\n\nrun(duration)\nNow all we need"
   }
 ]

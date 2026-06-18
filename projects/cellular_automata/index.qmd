@@ -1,6 +1,6 @@
 ---
 title: "Cellular Automata"
-description: "Test"
+description: ""
 listing:
   contents: "."                # Look inside this current folder for posts
   sort: "date desc"            # Sort chronologically, newest first
@@ -8,4 +8,4 @@ listing:
   categories: true             # Allow sidebar tag filtering within this project
 ---
 
-Test
+My goal with this project is explore the world of cellular automata while also getting some practice with python. I am primarily a MATLAB user so I want to spend some time getting familiar with python on a basic set of problems. Cellular automata provide a great opportunity for this because they are just a simple set of rules that are iterated upon to create interesting patterns. I plan to begin with basic 1D cellular automata and then progress to more interesting problems. 
