@@ -1,15 +1,16 @@
 /* css styles */
 
 /* This styles the code blocks for BOTH light and dark modes automatically */
+/* LIGHT MODE: Force a distinct light blue background */
 div.sourceCode {
-  background-color: var(--quarto-body-bg); /* Uses the theme's default background */
-  filter: brightness(0.95);                 /* Slightly darkens it for light mode */
-  border: 1px solid var(--bs-border-color); /* Uses the theme's native border color */
+  background-color: #e6f2ff !important; 
+  border: 2px solid #b3d7ff !important;
   border-radius: 6px;
-  padding: 10px;
+  padding: 12px;
 }
 
-/* If the user is in dark mode, we actually want to LIGHTEN the box slightly instead of darkening it */
+/* DARK MODE: Force a distinct dark charcoal background */
 .quarto-dark div.sourceCode {
-  filter: brightness(1.2);                  /* Slightly lightens the box against the pitch-black background */
+  background-color: #2d3238 !important;
+  border: 2px solid #454d56 !important;
 }
