@@ -1,16 +1,15 @@
 /* css styles */
 
-/* This styles the code blocks for BOTH light and dark modes automatically */
-/* LIGHT MODE: Force a distinct light blue background */
-div.sourceCode {
-  background-color: #e6f2ff !important; 
-  border: 2px solid #b3d7ff !important;
+/* Styles both actual code blocks and your plain text/pseudocode blocks */
+div.sourceCode, pre.text {
+  background-color: var(--quarto-body-bg); 
+  filter: brightness(0.95);                 /* Subtle contrast in light mode */
+  border: 1px solid var(--bs-border-color); 
   border-radius: 6px;
-  padding: 12px;
+  padding: 10px;
 }
 
-/* DARK MODE: Force a distinct dark charcoal background */
-.quarto-dark div.sourceCode {
-  background-color: #2d3238 !important;
-  border: 2px solid #454d56 !important;
+/* Properly handles dark mode contrast */
+.quarto-dark div.sourceCode, .quarto-dark pre.text {
+  filter: brightness(1.2);                  /* Subtle contrast in dark mode */
 }
