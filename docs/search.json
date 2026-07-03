@@ -49,18 +49,18 @@
     "text": "Hello World\nThis is a template for a post"
   },
   {
-    "objectID": "projects/cellular_automata/a_new_kind_of_science.html",
-    "href": "projects/cellular_automata/a_new_kind_of_science.html",
-    "title": "Tempalte",
-    "section": "",
-    "text": "Hello World\nThis is a template for a post"
-  },
-  {
     "objectID": "projects/cellular_automata/index.html",
     "href": "projects/cellular_automata/index.html",
     "title": "Cellular Automata",
     "section": "",
-    "text": "My goal with this project is explore the world of cellular automata while also getting some practice with python. I am primarily a MATLAB user so I want to spend some time getting familiar with python on a basic set of problems. Cellular automata provide a great opportunity for this because they are just a simple set of rules that are iterated upon to create interesting patterns. I plan to begin with basic 1D cellular automata and then progress to more interesting problems.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempalte\n\n\n\n\n\n\nTemplate\n\n\nPython\n\n\n\ndescription\n\n\n\n\n\nJun 6, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "My goal with this project is explore the world of cellular automata while also getting some practice with python. I am primarily a MATLAB user so I want to spend some time getting familiar with python on a basic set of problems. Cellular automata provide a great opportunity for this because they are just a simple set of rules that are iterated upon to create interesting patterns. I plan to begin with basic 1D cellular automata and then progress to more interesting problems.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGame of Life\n\n\n\n\n\n\nCellular Automata\n\n\nPython\n\n\n\n\n\n\n\n\n\nJun 18, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/cellular_automata/game_of_life/game_of_life.html",
+    "href": "projects/cellular_automata/game_of_life/game_of_life.html",
+    "title": "Game of Life",
+    "section": "",
+    "text": "Starting From the Start\nI first learned about cellular automata as most people do, with John Conway’s Game of Life. Since I am new to python I figured this would be as good a place as any to get started. It will let me get familiar with python syntax, array manipulation, and plotting/animation. It will also give me a chance to get better at adding code, figures, and videos to the blog.\nJohn Conway’s Game of Life is a simple simulation (single player “game”) that takes place on a 2D grid world with discrete time. At any given time, each grid cell can either be alive or dead. Each cell follows rules that dictate whether they are alive or dead at the next time step. The rules are as follows\n\n\n\nRules for Game of Life\n\n\nThe way the “game” works is you pick some initial set of living cells and then hit run. Thats it. What is amazing is that from just these basic rules, we get a wide range of interesting “life like” behavior from the cells. I didn’t really appreciate how cool this was when I first learned about it, but today I am very excited to see if I can recreate it. Lets begin!\n\n\nCode Overview\nWhen I start a project I am used to thinking in MATLAB. So for these first few projects I will try to outline my plans in pseudocode first so that I can get used to thinking more abstractly. Hopefully this makes it easier when I go to implement it in python too. Also, if you notice that I like putting things into functions with big blocky comments, you would be correct.\n# ----- Define World Parameters -----\nworld_size = NxM\nworld_wrap = true\ntime_steps = 1000\netc...\n\n# ----- User Defined Initial World State -----\nworld_state = NxM matrix of 0s and 1s\n\n$ ----- Simulate Game -----\nFOR EACH time IN timesteps\n\n    FOR EACH cell_index in world_state\n\n        updated_world_state(cell_index) = update_cell(world_state,cell_index)\n\n    END\n\n    world_state = updated_world_state\n\nEND\n\n\n\nInitial Results\nUPDATE: Had a very busy couple weeks at work with internal innovation activities. This drained all my creative energy so this project has been on pause. Below is a teaser of some initial results. I plan to get back on my post schedule starting after the July/4th weekend.\n\n\n\nInitial Results"
   },
   {
     "objectID": "projects/immune_system/index.html",
