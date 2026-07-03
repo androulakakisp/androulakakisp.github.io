@@ -11,7 +11,7 @@ I first learned about cellular automata as most people do, with John Conway's Ga
 
 John Conway's Game of Life is a simple simulation (single player "game") that takes place on a 2D grid world with discrete time. At any given time, each grid cell can either be alive or dead. Each cell follows rules that dictate whether they are alive or dead at the next time step. The rules are as follows
 
-![Rules for Game of Life](./images/game_of_life_rules.jpg)
+!Image From: https://playgameoflife.com/](./images/game_of_life_rules.jpg)
 
 The way the "game" works is you pick some initial set of living cells and then hit run. Thats it. What is amazing is that from just these basic rules, we get a wide range of interesting "life like" behavior from the cells. I didn't really appreciate how cool this was when I first learned about it, but today I am very excited to see if I can recreate it. Lets begin!
 
@@ -48,4 +48,4 @@ END
 
 UPDATE: Had a very busy couple weeks at work with internal innovation activities. This drained all my creative energy so this project has been on pause. Below is a teaser of some initial results. I plan to get back on my post schedule starting after the July/4th weekend.
 
-![Initial Results](./images/initial_results.gif)
+![](./images/initial_results.gif)
