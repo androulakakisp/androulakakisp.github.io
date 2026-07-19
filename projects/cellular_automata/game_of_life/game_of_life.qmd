@@ -55,5 +55,6 @@ To test out the code, lets try running some of the famous Game of Life patterns.
 
 ::: {layout-ncol=2}
 ![Glider](./images/glider.gif){width=90%}
+
 ![Gray Counter](./images/gray_counter.gif){width=90%}
 :::
