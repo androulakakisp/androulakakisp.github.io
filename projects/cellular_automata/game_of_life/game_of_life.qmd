@@ -56,5 +56,24 @@ To test out the code, lets try running some of the famous Game of Life patterns.
 ::: {layout-ncol=2}
 ![Glider](./images/glider.gif){width=100%}
 
+~[Light Weight Space Ship (LWSS)](./images/lwss.gif){width=100%}
+
+![Bun](./images/bun.gif){width=100%}
+
 ![Gray Counter](./images/gray_counter.gif){width=100%}
+:::
+
+Very cool! Looks like it is working. Here are some more examples of some more complex initial patterns. The first one is actually the result of an error when I was entering the initial state for the gray counter example above. 
+
+::: {layout-ncol=2}
+![Broken Gray Counter](./images/broken_gray_counter.gif){width=100%}
+
+![LWSS-LWSS Bounce](./images/lwss_lwss_bounce.gif){width=100%}
+:::
+
+And just because I had to try, here are two examples of what happens when you initialize with a random state.
+::: {layout-ncol=2}
+![Random Initialization 1](./images/random_1.gif){width=100%}
+
+![Random Initialization 2](./images/random_2.gif){width=100%}
 :::
