@@ -53,8 +53,8 @@ I will post a link to a repository with my final python code soon. I am working 
 
 To test out the code, lets try running some of the famous Game of Life patterns. 
 
-::: {#fig-gallery layout-ncol=2}
-![Glider](./images/glider.gif){width=90%}
+::: {layout-ncol=2}
+![Glider](./images/glider.gif){width=100%}
 
-![Gray Counter](./images/gray_counter.gif){width=90%}
+![Gray Counter](./images/gray_counter.gif){width=100%}
 :::
