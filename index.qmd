@@ -12,17 +12,17 @@ listing:
       title: "Cellular Automata"
       description: "Collection of thoughts and tests where simple rules interact to form complex results"
     
-    - path: projects/ants/index.qmd
-      title: "Ants"
-      description: ""
+    #- path: projects/ants/index.qmd
+    #  title: "Ants"
+    #  description: "Coming Soon..."
     
-    - path: projects/immune_system/index.qmd
-      title: "Immune System"
-      description: "Testing "
+    #- path: projects/immune_system/index.qmd
+    #  title: "Immune System"
+    #  description: "Coming Soon..."
     
     - path: projects/spiking_neural_networks/index.qmd
       title: "Spiking Neural Networks"
-      description: "Learning how to simulate and train spiking nerual networks."
+      description: "Learning how to simulate and train spiking neural networks."
 ---
 
 > "You know, the more I think about it, the more I believe that no-one is actually worried about AIs taking over the world or anything like that, no matter what they say. 
@@ -43,13 +43,13 @@ Welcome to the Emergent Intelligence Blog! This website contains posts detailing
 
 ### Why I'm Not Reading Papers (Yet)
 
-I have found in the past that when I discover a new topic I am excited about, I immediately go and read about what everyone in the field has been doing with it. This is clearly an important step for coming up to speed on the state of the art and is a critical first step if you want to do research and publish in the domain. However, I have recently noticed that reading papers seems to become the end of my intellectual journey. I spend a couple weeks learning as much as I can, and then end up asking my self: 
+I have found in the past that when I discover a new topic I am excited about, I immediately go and read about what everyone in the field has been doing with it. This is clearly an important step for coming up to speed on the state of the art and is critical if you want to do research and publish in the domain. However, I have recently noticed that reading papers seems to become the end of my intellectual journey. I spend a couple weeks learning as much as I can, and then end up asking my self: 
 
 * "Why spend my time doing a tiny simulation when there are labs full of people working on this full time?"
 * "Surely there is nothing I can do that they won't already have tried..."
 * "If I really want to work on X, I first need to be an expert in Y, which means I need to learn about Z, etc...."
 
-These kinds of feelings were surmountable in graduate school when I had the time and support to actually dedicate myself fully to a topic like this and get to the forefront of knowledge to make my impact. These days, with a full time job and other responsibilities, these kinds of thought quickly turn into a feeling of futility and inaction. I end up reading papers from the sidelines and daydream about all the cool things I could be trying out. Well daydream no more.
+These kinds of feelings were surmountable in graduate school when I had the time and support to actually dedicate myself fully to a topic like this and get to the forefront of knowledge to make my impact. These days, with a full time job and other responsibilities, these kinds of thoughts quickly turn into a feeling of futility and inaction. I end up reading papers from the sidelines and daydream about all the cool things I could be trying out. Well daydream no more.
 
 ### Learning by Doing
 

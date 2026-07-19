@@ -216,11 +216,13 @@ FOR EACH time IN timesteps
 
 END
 </code></pre>
+<p>Note that we save the updated world state in a separate matrix so that all the cells can update “at once”. In other words, we don’t want the updates of one cell to be recorded until we compute the updates from all the cells.</p>
+<p>I will post a link to a repository with my final python code soon. I am working on setting up a new Github account specifically for this blog so I don’t dox my self.</p>
 </section>
 <section id="initial-results" class="level3">
 <h3 class="anchored" data-anchor-id="initial-results">Initial Results</h3>
-<p>UPDATE: Had a very busy couple weeks at work with internal innovation activities. This drained all my creative energy so this project has been on pause. Below is a teaser of some initial results. I plan to get back on my post schedule starting after the July/4th weekend.</p>
-<p><img src="./images/initial_results.gif" class="img-fluid"></p>
+<p>To test out the code, lets try running some of the famous Game of Life patterns.</p>
+<p><img src="./images/glider.gif" class="img-fluid" alt="Glider"> <img src="./images/gray_counter.gif" class="img-fluid" alt="Gray Counter"></p>
 
 
 </section>

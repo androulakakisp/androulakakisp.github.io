@@ -44,8 +44,15 @@ END
 
 ```
 
+Note that we save the updated world state in a separate matrix so that all the cells can update "at once". In other words, we don't want the updates of one cell to be recorded until we compute the updates from all the cells. 
+
+I will post a link to a repository with my final python code soon. I am working on setting up a new Github account specifically for this blog so I don't dox my self.
+
+
 ### Initial Results
 
-UPDATE: Had a very busy couple weeks at work with internal innovation activities. This drained all my creative energy so this project has been on pause. Below is a teaser of some initial results. I plan to get back on my post schedule starting after the July/4th weekend.
+To test out the code, lets try running some of the famous Game of Life patterns. 
 
-![](./images/initial_results.gif)
+
+![Glider](./images/glider.gif)
+![Gray Counter](./images/gray_counter.gif)
