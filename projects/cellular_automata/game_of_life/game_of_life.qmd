@@ -56,7 +56,7 @@ To test out the code, lets try running some of the famous Game of Life patterns.
 ::: {layout-ncol=2}
 ![Glider](./images/glider.gif){width=100%}
 
-~[Light Weight Space Ship (LWSS)](./images/lwss.gif){width=100%}
+![Light Weight Space Ship (LWSS)](./images/lwss.gif){width=100%}
 
 ![Bun](./images/bun.gif){width=100%}
 
@@ -72,6 +72,7 @@ Very cool! Looks like it is working. Here are some more examples of some more co
 :::
 
 And just because I had to try, here are two examples of what happens when you initialize with a random state.
+
 ::: {layout-ncol=2}
 ![Random Initialization 1](./images/random_1.gif){width=100%}
 
